@@ -6,7 +6,7 @@
 <div class="navigation-ghost"></div>
 <div class="navigation">
     <div class="mobile-navigation">
-        <div class="mobile-navigation-logo"></div>
+        <a href="/"><div class="mobile-navigation-logo"></div></a>
         <div class="mobile-navigation-btn"></div>
 
         <div class="mobile-navigation-drop">
