@@ -1,19 +1,7 @@
-<!doctype html>
-<html lang="en">
-	<head>
-  		<meta charset="utf-8">
-  		<title>The Techy Juan Wholesale</title>
-		<meta name="description" content=" ... ">
-		<meta name="author" content="Starr Development">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/master.css?v=1.0">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-
+<?php
+include "includes/head.php";
+?>
 	<body>
-		<script src="js/jquery-3.1.1.min.js"></script>
-		<script src="js/main.js"></script>
-		
 		<div class="filter"></div>
 		<div class="navigation-ghost"></div>
 		<div class="navigation">
@@ -52,16 +40,6 @@
 		<div class="down-for-maintenance">
 			<a>Our Shop is currently under maintenance!</a>
 		</div>
-
-		<div class="divider"></div>
-		<div class="social">
-			<div class="social-btn social-youtube" onClick="window.location='index.php?socialmedia=youtube'"></div>
-			<div class="social-btn social-twitter" onClick="window.location='index.php?socialmedia=twitter'"></div>
-			<div class="social-btn social-facebook" onClick="window.location='index.php?socialmedia=facebook'"></div>
-			<div class="social-btn social-google" onClick="window.location='index.php?socialmedia=google'"></div>
-		</div>
-		<div class="footer">
-			<a>the Techy Juan&nbsp;&nbsp;|&nbsp;&nbsp;Terms and Conditions</a>
-		</div>
-	</body>
-</html>
+<?php
+include 'includes/foot.php';
+?>
