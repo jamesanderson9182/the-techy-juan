@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
   		<meta charset="utf-8">
-  		<title>The Techy Juan</title>
+  		<title>The Techy Juan - Home Page</title>
 		<meta name="description" content=" ... ">
 		<meta name="author" content="Starr Development">
 		<link rel="stylesheet" href="css/reset.css">
