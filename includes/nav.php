@@ -1,12 +1,11 @@
 <body>
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/main.js"></script>
-
 <div class="filter"></div>
 <div class="navigation-ghost"></div>
 <div class="navigation">
     <div class="mobile-navigation">
-        <a href="/"><div class="mobile-navigation-logo"></div></a>
+        <a href="/">
+            <div class="mobile-navigation-logo"></div>
+        </a>
         <div class="mobile-navigation-btn"></div>
 
         <div class="mobile-navigation-drop">
@@ -22,7 +21,7 @@
                 <li><a href="contact.php">CONTACT</a></li>
             </ul>
             <div class="mobile-navigation-drop-cart" onClick="window.location='cart.php'">
-                <a>View  your Shopping Cart (0)</a>
+                <a>View your Shopping Cart (0)</a>
             </div>
             <div class="mobile-navigation-drop-account">
                 <a style="color:grey" href="#">Login</a>
