@@ -170,18 +170,26 @@
 			margin:0 0 0 0;
 		}
 		.desktop-navigation ul{
-			height:60px;width:auto;
+			height:30px;width:auto;
 			display: inline-block;
 			overflow: hidden;
+			margin:15px 0;
 		}
-		.desktop-navigation li{
+		.desktop-navigation-li{
 			display: inline-block;
 			margin:0;
-			height:60px;
+			overflow: hidden;
+			height:30px;
+		}
+		.desktop-navigation-div{
+			display: inline-block;
+			margin:5px 0;
+			height:20px;width:2px;
+			background-color: grey;
 		}
 		.desktop-navigation li a{
 			display: block;
-			padding:22px 15px;
+			padding:6px 15px;
 			text-decoration: none;
 			color:white;
 		}

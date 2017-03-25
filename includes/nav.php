@@ -46,11 +46,15 @@
             <div class="desktop-navigation-logo"></div>
             <div class="desktop-navigation-right">
                 <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="shop.php">Shop</a></li>
-                    <li><a href="forum.php">Forum</a></li>
-                    <li><a href="blog.php">Blog</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li class="desktop-navigation-li"><a href="index.php">Home</a></li>
+                    <li class="desktop-navigation-div"></li>
+                    <li class="desktop-navigation-li"><a href="shop.php">Shop</a></li>
+                    <li class="desktop-navigation-div"></li>
+                    <li class="desktop-navigation-li"><a href="forum.php">Forum</a></li>
+                    <li class="desktop-navigation-div"></li>
+                    <li class="desktop-navigation-li"><a href="blog.php">Blog</a></li>
+                    <li class="desktop-navigation-div"></li>
+                    <li class="desktop-navigation-li"><a href="contact.php">Contact</a></li>
                 </ul>
                 <div class="desktop-navigation-search">
                     <span class="desktop-navigation-search-icon"><i class="fa fa-search"></i></span>
