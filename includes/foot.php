@@ -1,9 +1,9 @@
 <div class="divider"></div>
 <div class="social">
-    <i class="fa fa-youtube" aria-hidden="true"></i>
-    <i class="fa fa-twitter" aria-hidden="true"></i>
-    <i class="fa fa-facebook" aria-hidden="true"></i>
-    <i class="fa fa-google" aria-hidden="true"></i>
+    <span><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></span>
+    <span><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span>
+    <span><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></span>
+    <span><i class="fa fa-google fa-2x" aria-hidden="true"></i></span>
 </div>
 <div class="footer">
     <a class="footer-title">the Techy Juan&nbsp;&nbsp;|</a><a class="footer-title terms-and-privacy">&nbsp;&nbsp;Terms
