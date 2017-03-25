@@ -4,14 +4,13 @@ include "includes/config/DB_config.php";
 include "includes/func.php";
 
 if(isset($_POST["submit_contact"])){
-
+	// check if everything is set
 	if(isset($_POST["contact_name"])){
 		$contact_name		= $_POST["contact_name"];
 	}else{
 		echo "<br/><br/><br/>Error : Contact name is not set!<br/>";
 		return false;
 	}
-
 
 	if(isset($_POST["contact_mail"])){
 		$contact_mail		= $_POST["contact_mail"];
@@ -20,7 +19,6 @@ if(isset($_POST["submit_contact"])){
 		return false;
 	}
 
-
 	if(isset($_POST["contact_content"])){
 		$contact_content	= $_POST["contact_content"];
 	}else{
@@ -28,6 +26,7 @@ if(isset($_POST["submit_contact"])){
 		return false;
 	}
 
+	//now check for validation
 	if(strlen($contact_content) === 0 || strlen($contact_content) >= 60000){
 		echo "<br/><br/><br/>Error : length error!<br/>";
 		return false;
@@ -36,7 +35,10 @@ if(isset($_POST["submit_contact"])){
 	$contact_name		= input_Validation_basic($contact_name);
 	$contact_mail		= is_validate_mail($contact_mail);
 	$contact_content	= input_Validation_basic($contact_content);
-
+	if(empty($contact_name) || empty($contact_mail)){
+		echo "<br/><br/><br/>Error : Name or mail field is emtpy!<br/>";
+		return false;
+	}
 	$contact_us_i_query = $DB_CONN->prepare(
 					"INSERT INTO "
 						.TABLE_CONTACT_US .
