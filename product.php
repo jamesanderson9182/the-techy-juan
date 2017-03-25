@@ -4,6 +4,7 @@ include "includes/head.php";
 include 'models/Product.php';
 
 $products = Product::All();
+print "<div class='center'>";
 print '<div class="product-container">';
 /** @var Product $product */
 foreach ($products as $product) {
@@ -16,6 +17,7 @@ foreach ($products as $product) {
     </div>
     <?php
 }
+print "</div>";
 print "</div>";
 
 include 'includes/foot.php';
