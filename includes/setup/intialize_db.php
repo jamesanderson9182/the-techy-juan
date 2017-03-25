@@ -131,6 +131,24 @@ if(!is_table_exists($DB_CONN, TABLE_PRODUCTS_TAX)) {
 }
 
 
+if(!is_table_exists($DB_CONN, TABLE_CUSTOMERS_INFO)) {
+    $mnfctr_tble_crt_qry = "CREATE TABLE IF NOT EXISTS ".TABLE_CUSTOMERS_INFO."(
+			id_cutomers_ifo			integer NOT NULL PRIMARY KEY AUTO_INCREMENT,
+			id_customer				integer NOT NULL,
+			countries_id			integer NOT NULL,
+			coustomer_street_address	integer NOT NULL,
+			coustomer_state			varchar(255) NOT NULL,
+			coustomer_city			varchar(255) NOT NULL,
+			coustomer_postcode		varchar(255) NOT NULL,
+			zone_id					integer DEFAULT 0,
+			acc_date_created  		DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+			acc_date_modified  		DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+			)";
+	echo $DB_CONN->exec($mnfctr_tble_crt_qry) ? 
+		"<br/>Table <b>".TABLE_CUSTOMERS_INFO."</b> Failed!<br>" : 
+		"<br/>Table <b>".TABLE_CUSTOMERS_INFO."</b> created successfully!<br>";
+}
+
 echo "<br/> Script Finished !<br/>";
 
 
