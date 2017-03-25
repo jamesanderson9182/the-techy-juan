@@ -1,5 +1,6 @@
 <?php
 include "includes/head.php";
+include "models/product.php";
 ?>
     <div class="youtube">
         <div class="youtube-center" onClick="window.location='https://www.youtube.com/watch?v=pQ9L3HUHEFs'"></div>
@@ -32,31 +33,26 @@ $db = mysqli_connect('localhost', 'root', '', 'products')
 or die('Error connecting to MySQL server.');
 ?>
     <div class="products">
-        <a class="products-title">Featured Products</a>
-        <div class="products-center">
-            <?php
-            //Step2
-            $query = "SELECT * FROM products.featured_list;";
-            mysqli_query($db, $query) or die('Error querying database.');
-
-            $result = mysqli_query($db, $query);
-            $row = mysqli_fetch_array($result);
-
-            while ($row = mysqli_fetch_array($result)) {
-                $productId = $row['product_id'];
-                $productName = $row['product_name'];
-                $productPrice = $row['product_price'];
-                $productImage = $row['product_image'];
-                $productReview = $row['product_review'];
-
-                $productHref = "window.location='product.php?id=" . $productId . "';";
-
-                echo '<div class="product-tile" onClick="' . $productHref . '"><div class="product-image" style="background-image:url(' . $productImage . ');background-size:cover;background-position:center;background-repeat:no-repeat;"></div><a class="product-title">' . $productName . '</a><div class="product-review"><div class="product-review-top" style="width:' . $productReview . '%;"></div></div><a class="product-price">$' . $productPrice . '</a></div>';
-            }
-            mysqli_close($db);
-            ?>
-        </div>
-        <a class="products-view">View More</a>
+        <div class="center">
+	        <a class="products-title">Featured Products</a>
+	        <div class="products-center">
+	            <?php 
+	            $products = Product::All();
+	            foreach ($products as $product){
+	            ?>
+	            <div class='product'>
+	            	<img src="lorempixel.com/50/50">
+			        <h1><?= $product->product_name ?></h1>
+			        <p><?= $product->product_description ?></p>
+			        <p><?= $product->product_price ?></p>
+			        <p><?= $product->getStars() ?></p>
+	  			</div>
+	            <?php
+	            }
+	            ?>
+	        </div>
+        	<a class="products-view">View More</a>
+    	</div>
     </div>
 <?php
 include 'includes/foot.php';

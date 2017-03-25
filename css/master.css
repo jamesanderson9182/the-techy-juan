@@ -345,54 +345,14 @@
 		margin:20px auto 0 auto;
 		overflow:hidden;
 	}
-	.products-title{
-		display:block;
-		font-size:20px;
-		margin:0 0 20px 0;
-	}
-	.product-tile{
+	.product{
 		width:30%;height:auto;
 		max-width:200px;
 		text-align: center;
 		display: inline-block;
 		margin:5px 1% 10px 1%;
+		background-color:red;
 	}
-	.product-image{
-		width:100%;padding-bottom:100%;
-	}
-	.product-title{
-		display:block;
-	}
-	.product-price{
-		padding:5px 0 0 0;
-		display:block;
-		color:grey;
-
-	}
-	.product-review{
-		width:100px;height:20px;
-		background-color:lightgrey;
-		background-size:cover;
-		background-repeat: no-repeat;
-		background-image:url("../img/product-review.png");
-		margin:0 auto;
-		position: relative;
-	}
-	.product-review-top{
-		float:left;
-		height:100%;
-		background-color:gold;
-		background-size:cover;
-		background-repeat: no-repeat;
-		background-image:url("../img/product-review.png");
-	}
-	.products-view{
-		float:right;
-		display:block;
-		padding:0 5px 0 0;
-		color:#212121;
-	}
-	.products-center{text-align: center;}
 /*/////////////////////////////////////////
 	TERMS AND CONDITIONS
 /////////////////////////////////////////*/

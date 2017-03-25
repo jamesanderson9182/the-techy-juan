@@ -1,4 +1,4 @@
-<?php
+e<?php
 include "includes/head.php";
 include "includes/config/DB_config.php";
 include "includes/func.php";
