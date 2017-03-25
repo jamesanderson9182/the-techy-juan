@@ -33,6 +33,34 @@
     </div>
 
     <div class="desktop-navigation">
-
+        <div class="center">
+            <div class="desktop-navigation-cart">
+                <a href="cart.php">Shopping Cart(0)</a>
+                <a style="color:grey;">&nbsp;|&nbsp;</a>
+                <a href="#">Login</a>
+                <a style="color:grey;">&nbsp;|&nbsp;</a>
+                <a href="#">Sign-up</a>
+            </div>
+        </div>
+        <div class="desktop-navigation-container">
+            <div class="desktop-navigation-logo"></div>
+            <div class="desktop-navigation-right">
+                <ul>
+                    <li class="desktop-navigation-li"><a href="index.php">Home</a></li>
+                    <li class="desktop-navigation-div"></li>
+                    <li class="desktop-navigation-li"><a href="shop.php">Shop</a></li>
+                    <li class="desktop-navigation-div"></li>
+                    <li class="desktop-navigation-li"><a href="forum.php">Forum</a></li>
+                    <li class="desktop-navigation-div"></li>
+                    <li class="desktop-navigation-li"><a href="blog.php">Blog</a></li>
+                    <li class="desktop-navigation-div"></li>
+                    <li class="desktop-navigation-li"><a href="contact.php">Contact</a></li>
+                </ul>
+                <div class="desktop-navigation-search">
+                    <span class="desktop-navigation-search-icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search..." />
+                </div>
+            </div>
+        </div>
     </div>
 </div>
