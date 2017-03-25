@@ -1,9 +1,9 @@
 <div class="divider"></div>
 <div class="social">
-    <div class="social-btn social-youtube" onClick="window.location='index.php?socialmedia=youtube'"></div>
-    <div class="social-btn social-twitter" onClick="window.location='index.php?socialmedia=twitter'"></div>
-    <div class="social-btn social-facebook" onClick="window.location='index.php?socialmedia=facebook'"></div>
-    <div class="social-btn social-google" onClick="window.location='index.php?socialmedia=google'"></div>
+    <i class="fa fa-youtube" aria-hidden="true"></i>
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+    <i class="fa fa-google" aria-hidden="true"></i>
 </div>
 <div class="footer">
     <a class="footer-title">the Techy Juan&nbsp;&nbsp;|</a><a class="footer-title terms-and-privacy">&nbsp;&nbsp;Terms
