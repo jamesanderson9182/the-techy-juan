@@ -352,6 +352,7 @@
 	}
 	.product-tile{
 		width:30%;height:auto;
+		max-width:200px;
 		text-align: center;
 		display: inline-block;
 		margin:5px 1% 10px 1%;
