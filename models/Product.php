@@ -24,17 +24,12 @@ class Product extends Model
 
     public function getStars()
     {
-        $rating = $this->product_review;
-
-        if ($rating < 1) {
-            return <<<HTML
-<i class="fa fa-star-o" aria-hidden="true"></i>
-HTML;
-
-        }
-        $html = "";
-        for ($i = 0; $i < $rating; $i++) {
-            $html .= '<i class="fa fa-star" aria-hidden="true"></i>';
+        $html = '';
+        for ($i = 0; $i < 5; $i++) {
+            if($i <= $this->product_review)
+                $html .= '<i class="fa fa-star" aria-hidden="true"></i>';
+            else
+                $html .= '<i class="fa fa-star-o" aria-hidden="true"></i>';
         }
 
         return $html;
