@@ -1,5 +1,6 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
+var mainJquery = jQuery.noConflict();
+
+mainJquery( document ).ready(function($) {
 
     $mobileNavOpen = false;
     $showDescription = false;
