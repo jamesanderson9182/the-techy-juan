@@ -1,22 +1,21 @@
 <?php
+
 include "includes/head.php";
-// todo: Put this into it's own file that we can include
-// todo: PDO database as mysqli is deprecated
+include 'models/Product.php';
 
-try {
-    $db = new PDO('mysql:host=localhost;dbname=products;charset=utf8mb4', 'root', '');
-    $products = $db->query("select * from product_list", PDO::FETCH_OBJ)->fetchAll();
-
-    foreach ($products as $product) {
-        print "<div class='product'>";
-        print "<p>" . $product->product_name . "</p>";
-        print "<p>" . $product->product_description . "</p>";
-        print "<p>" . $product->product_price . "</p>";
-        print "<p>" . $product->product_review . "</p>";
-        print "</div>";
-    }
-} catch (Exception $exception) {
-    print $exception->getMessage();
+$products = Product::All();
+print '<div class="product-container">';
+/** @var Product $product */
+foreach ($products as $product) {
+    ?>
+    <div class='product'>
+        <h1><?= $product->product_name ?></h1>
+        <p><?= $product->product_description ?></p>
+        <p><?= $product->product_price ?></p>
+        <p><?= $product->getStars() ?></p>
+    </div>
+    <?php
 }
+print "</div>";
 
 include 'includes/foot.php';
