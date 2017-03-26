@@ -265,8 +265,8 @@
 		left:0;top:0;
 	}
 	.youtube-tile{
-		width:28%;padding-bottom:17%;
-		margin:2% 1%;
+		width:33%;padding-bottom:17%;
+		margin:2% 0;
 		display: inline-block;
 		background-size:cover;
 		background-position:center;
