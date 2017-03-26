@@ -6,6 +6,9 @@ abstract class Model
     public $tableName;
     public $uniqueIdentifierColumnName;
 
+    /**
+     * @return array
+     */
     public static function All(){}
 
     public function __construct($id = null){
