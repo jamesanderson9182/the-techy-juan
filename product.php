@@ -2,8 +2,10 @@
 
 include "includes/head.php";
 include 'models/Product.php';
-if (isset($_GET["product"])) {
-    $productID = $_GET["product"] - 1 + 1;
+
+if (isset($_SERVER["PATH_INFO"])) {
+    $productID = str_replace('/', '', $_SERVER["PATH_INFO"]);
+    $productID = $productID - 1 + 1;
     var_dump($productID);
     if (is_int($productID) && $productID > 0) {
         printOne($productID);
@@ -18,11 +20,16 @@ function printOne($id)
 {
     $product = new Product($id)
     ?>
-    <div class='product'>
-        <h1><?= $product->product_name ?></h1>
-        <p><?= $product->product_description ?></p>
-        <p><?= $product->product_price ?></p>
-        <p><?= $product->getStars() ?></p>
+    <a href="/product/" class="back-button-link" ">back</a>
+    <div class='center'>
+        <div class="product-container">
+            <div class='product'>
+                <h1><?= $product->product_name ?></h1>
+                <p><?= $product->product_description ?></p>
+                <p><?= $product->product_price ?></p>
+                <p><?= $product->getStars() ?></p>
+            </div>
+        </div>
     </div>
     <?php
 }
@@ -37,7 +44,7 @@ function printAll()
         foreach ($products as $product) {
             ?>
             <div class='product'>
-                <h1><?= $product->product_name ?></h1>
+                <h1><a href="/product/<?= $product->product_id ?>"><?= $product->product_name ?></a></h1>
                 <p><?= $product->product_description ?></p>
                 <p><?= $product->product_price ?></p>
                 <p><?= $product->getStars() ?></p>

@@ -38,7 +38,7 @@ class Product extends Model
     public function __construct($id = null)
     {
         $this->tableName = 'product_list';
-        $this->uniqueIdentifier = 'product_id';
+        $this->uniqueIdentifierColumnName = 'product_id';
         return parent::__construct($id);
     }
 
