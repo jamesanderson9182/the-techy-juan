@@ -29,6 +29,15 @@ include "models/product.php";
             <div class="project-filter"></div>
             <a>Kodi Entertainment</a>
         </div>
+        <div class="project-tile project2" onClick="window.location='./projects/kodi-entertainment.php'">
+            <div class="project-filter"></div>
+            <a>A Project</a>
+        </div>
+        <div class="project-tile project2" onClick="window.location='./projects/kodi-entertainment.php'">
+            <div class="project-filter"></div>
+            <a>A Project</a>
+        </div>
+        <a href="#" class="project-viewmore">View more&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
     </div>
     <div class="divider"></div>
 <?php
@@ -54,7 +63,7 @@ or die('Error connecting to MySQL server.');
 	            }
 	            ?>
 	        </div>
-        	<a class="products-view">View More</a>
+        	<a class="products-view">View More&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
     </div>
 <?php
 include 'includes/foot.php';

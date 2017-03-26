@@ -299,7 +299,16 @@
 		width:90%;height:auto;
 		max-width: 1200px;
 		margin:20px auto 0 auto;
-		overflow:hidden;
+		overflow:hidden;text-align: center;
+	}
+	.project-viewmore{
+		display:block;
+		padding:10px;
+		text-decoration: none;
+		color:grey;
+	}
+	.project-viewmore:hover{
+		color:#212121;
 	}
 	.project-title{
 		font-size:20px;
@@ -308,10 +317,10 @@
 	}
 	.project-tile{
 		width:100%;height:auto;
-		max-width:600px;
+		max-width:580px;
 		display: inline-block;
 		background-color:grey;
-		margin:10px auto;
+		margin:8px 4px;
 		text-align: center;
 		position: relative;
 		background-position:center;
