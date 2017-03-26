@@ -3,7 +3,10 @@ include "includes/head.php";
 include "models/product.php";
 ?>
     <div class="youtube">
-        <div class="youtube-center" onClick="window.location='https://www.youtube.com/watch?v=pQ9L3HUHEFs'"></div>
+        <div class="youtube-center">
+        	<iframe src="https://www.youtube.com/embed/pQ9L3HUHEFs" frameborder="0" allowfullscreen>
+			</iframe>
+        </div>
         <div class="youtube-tile yt-tile-1"
              onClick="window.location='https://www.youtube.com/watch?v=ggD-B3BzBwQ'"></div>
         <div class="youtube-tile yt-tile-2"
@@ -32,27 +35,26 @@ include "models/product.php";
 $db = mysqli_connect('localhost', 'root', '', 'products')
 or die('Error connecting to MySQL server.');
 ?>
-    <div class="products">
-        <div class="center">
-	        <a class="products-title">Featured Products</a>
-	        <div class="products-center">
+    <div class="f-products">
+        
+        	<a class="f-products-title">Featured Products</a>
+	        <div class="f-products-center">
 	            <?php 
 	            $products = Product::All();
 	            foreach ($products as $product){
 	            ?>
-	            <div class='product'>
-	            	<img src="lorempixel.com/50/50">
+	            <div class='f-product'>
+	            	<div class="f-product-image"></div>
 			        <h1><?= $product->product_name ?></h1>
-			        <p><?= $product->product_description ?></p>
-			        <p><?= $product->product_price ?></p>
 			        <p><?= $product->getStars() ?></p>
+			        <p><?= $product->product_price ?></p>
+			        
 	  			</div>
 	            <?php
 	            }
 	            ?>
 	        </div>
         	<a class="products-view">View More</a>
-    	</div>
     </div>
 <?php
 include 'includes/foot.php';
