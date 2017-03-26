@@ -41,7 +41,7 @@ or die('Error connecting to MySQL server.');
 	            foreach ($products as $product){
 	            ?>
 	            <div class='product'>
-	            	<img src="lorempixel.com/50/50">
+                    <img src="http://placehold.it/300x300">
 			        <h1><?= $product->product_name ?></h1>
 			        <p><?= $product->product_description ?></p>
 			        <p><?= $product->product_price ?></p>
