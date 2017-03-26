@@ -12,11 +12,11 @@ class Product extends Model
     public static function All()
     {
         $db = new PDO('mysql:host=localhost;dbname=products;charset=utf8mb4', 'root', '');
-        $products = $db->query("SELECT product_id FROM product_list", PDO::FETCH_OBJ)->fetchAll();
+        $products = $db->query("SELECT * FROM product_list", PDO::FETCH_OBJ)->fetchAll(PDO::FETCH_CLASS, 'Product');
 
         $productCollection = array();
         foreach ($products as $product) {
-            $productCollection[] = new Product($product->product_id);
+            $productCollection[] = $product;
         }
 
         return $productCollection;
@@ -26,7 +26,7 @@ class Product extends Model
     {
         $html = '';
         for ($i = 0; $i < 5; $i++) {
-            if($i <= $this->product_review)
+            if ($i <= $this->product_review)
                 $html .= '<i class="fa fa-star" aria-hidden="true"></i>';
             else
                 $html .= '<i class="fa fa-star-o" aria-hidden="true"></i>';
@@ -37,39 +37,30 @@ class Product extends Model
 
     public function __construct($id = null)
     {
-        parent::__construct();
-        if ($id != null) {
-            $db = new PDO('mysql:host=localhost;dbname=products;charset=utf8mb4', 'root', '');
-            $product = $db->query("select * from product_list where product_id = " . $id, PDO::FETCH_OBJ)->fetch();
-
-            $this->product_id = $product->product_id;
-            $this->product_name = $product->product_name;
-            $this->product_description = $product->product_description;
-            $this->product_price = $product->product_price;
-            $this->product_review = $product->product_review;
-
-            return $product;
-        }
-        $this->isNewRecord = true;
-        return $this;
+        $this->tableName = 'product_list';
+        $this->uniqueIdentifierColumnName = 'product_id';
+        return parent::__construct($id);
     }
 
-    public function Save()
+    public function save()
     {
+        $sql = <<<SQL
+UPDATE {$this->tableName} SET 
+                          product_name = '{$this->product_name}',
+                          product_description= '{$this->product_description}',
+                          product_price = {$this->product_price},
+                          product_review = {$this->product_review}
+                  WHERE product_id = {$this->product_id};
+SQL;
+
+        // We reassign the $sql variable only if there is a new record
         if ($this->isNewRecord) {
             $sql = <<<SQL
-INSERT INTO product_list (product_name,product_description,product_price,product_review) 
+INSERT INTO {$this->tableName} (product_name,product_description,product_price,product_review) 
 VALUES ("{$this->product_name}","{$this->product_description}","{$this->product_price}","{$this->product_review}");
 SQL;
-            return $this->db->exec($sql);
+            $this->isNewRecord = false;
         }
-
-        $sql = "UPDATE product_list SET 
-                          product_name = '" . addslashes($this->product_name) . "',
-                          product_description= '" . addslashes($this->product_description) . "',
-                          product_price= " . $this->product_price . ",
-                          product_review = " . $this->product_review . "
-                  WHERE product_id = " . $this->product_id;
 
         return $this->db->exec($sql);
     }
