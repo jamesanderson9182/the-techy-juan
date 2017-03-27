@@ -55,6 +55,24 @@
 		position: relative;
 		overflow: hidden;
 	}
+
+
+	.page{
+		width:100%;max-width:1200px;
+		height:auto;
+		margin:0 auto;
+		background-color:lightgrey;
+		position: relative;
+		overflow:hidden;
+		text-align: center;
+	}
+	.page-inner{
+		width:98%;height:auto;
+		margin:1%;
+		background-color:white;
+		position:relative;
+	}
+
 /*/////////////////////////////////////////
 	Navigation
 /////////////////////////////////////////*/
