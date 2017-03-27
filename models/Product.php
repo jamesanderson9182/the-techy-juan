@@ -69,4 +69,9 @@ SQL;
 
         return $this->db->exec($sql);
     }
+
+    public  static  function createTable() 
+    {
+        // create table
+    }
 }

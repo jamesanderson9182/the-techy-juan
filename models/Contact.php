@@ -45,4 +45,9 @@ SQL;
         return $contactCollection;
 	}
 
+	public static function createTable()
+	{
+		// Create table 
+	}
+
 }
