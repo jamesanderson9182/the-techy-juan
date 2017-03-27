@@ -1,8 +1,11 @@
 <?php
 include "includes/head.php";
 ?>
-    <div class="down-for-maintenance">
-        <a>Our Forum is currently under maintenance!</a>
+    <div class="page">
+        <div class="page-inner"><a>Forum is under maintenance</a></div>
+        <div class="page-inner">
+        	<div style="height:400px;"></div>
+        </div>
     </div>
 <?php
 include 'includes/foot.php';
