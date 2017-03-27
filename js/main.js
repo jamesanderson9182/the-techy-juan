@@ -60,4 +60,13 @@ mainJquery( document ).ready(function($) {
     	$(".terms").css('display','none');
 	});
 
+    function Get(yourUrl){
+        var Httpreq = new XMLHttpRequest(); // a new request
+        Httpreq.open("GET",yourUrl,false);
+        Httpreq.send(null);
+        return Httpreq.responseText;
+    }
+
+    // var json_obj = JSON.parse(Get('http://juan.local:8080/api?model=Product'));
+    // console.log("this is the author name: "+Object.values(json_obj[0]));
 });

@@ -63,7 +63,7 @@ include "models/product.php";
                     <h1><?= $product->product_name ?></h1>
                     <p><?= $product->getStars() ?></p>
                     <p><?= $product->product_price ?></p>
-                    <a class="home-featured-product-btn" href="#">View Product</a>
+                    <a class="home-featured-product-btn" href="/product/<?= $product->product_id ?>">View Product</a>
                 </div><!--
                 -->
                 <?php

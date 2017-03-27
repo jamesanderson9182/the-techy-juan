@@ -6,7 +6,7 @@ include 'models/Product.php';
 if (isset($_SERVER["PATH_INFO"])) {
     $productID = str_replace('/', '', $_SERVER["PATH_INFO"]);
     $productID = $productID - 1 + 1;
-    var_dump($productID);
+
     if (is_int($productID) && $productID > 0) {
         printOne($productID);
     } else {
@@ -20,7 +20,7 @@ function printOne($id)
 {
     $product = new Product($id)
     ?>
-    <a href="/product/" class="back-button-link" ">back</a>
+    <a href="/product/" class="back-button-link" ">All Products</a>
     <div class='center'>
         <div class="product-container">
             <div class='product'>
