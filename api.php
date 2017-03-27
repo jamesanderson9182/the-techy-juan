@@ -7,7 +7,8 @@
  *
  * This would allow you to obtain objects to use in javascript on the client side
  */
-include "models/Product.php";
+include_once("models/Product.php");
+include_once("models/Contact.php");
 header('Content-Type: application/json');
 
 if (!isset($_GET["model"])) {

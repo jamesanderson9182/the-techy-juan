@@ -1,5 +1,5 @@
 <?php
-include "Model.php";
+include_once("Model.php");
 
 class Product extends Model
 {
@@ -21,6 +21,8 @@ class Product extends Model
 
         return $productCollection;
     }
+
+
 
     /**
      * @return string Formatted Stars
