@@ -2,58 +2,81 @@
 include "includes/head.php";
 include "models/product.php";
 ?>
-    <div class="youtube">
-        <div class="youtube-center" onClick="window.location='https://www.youtube.com/watch?v=pQ9L3HUHEFs'"></div>
-        <div class="youtube-tile yt-tile-1"
-             onClick="window.location='https://www.youtube.com/watch?v=ggD-B3BzBwQ'"></div>
-        <div class="youtube-tile yt-tile-2"
-             onClick="window.location='https://www.youtube.com/watch?v=zWNo8kZ27bU'"></div>
-        <div class="youtube-tile yt-tile-3"
-             onClick="window.location='https://www.youtube.com/watch?v=2nL-KXxXgRQ'"></div>
-        <div class="youtube-view" onClick="window.location='https://www.youtube.com/channel/UCzFnpBkmgBF3IHdX_adsOww'">
-            <a>Visit Channel</a>
+    <div class="home-container">
+        <div class="home-youtube">
+            <div class="home-youtube-main"><iframe width="640" height="360" src="https://www.youtube.com/embed/nU4OIAYwo5g" frameborder="0" allowfullscreen></iframe></div><!--
+            --><div class="home-login-signup">
+                <div class="home-login-signup-container">
+                    <div class="home-login-signup-top">
+                        <a class="home-login-click" style="background-color:white;">Login</a><a class="home-signup-click" style="background-color:grey;">Sign-Up</a>
+                    </div>
+                    <div class="home-login">
+                        <form>
+                            <input type="text" name="email" placeholder="Email Address or Username">
+                            <input type="text" name="password" placeholder="Password">
+                        </form>
+                        <div class="home-login-signup-submit">
+                            <a>Login</a>
+                        </div>
+                    </div>
+                    <div class="home-signup">
+                        <form>
+                            <input type="text" name="firstname" placeholder="Name">
+                            <input type="text" name="username" placeholder="Username">
+                            <input type="text" name="email" placeholder="Email Address">
+                            <input type="text" name="password" placeholder="Password">
+                        </form>
+                        <div class="home-login-signup-submit">
+                            <a>Sign-Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="divider"></div>
-    <div class="project">
-        <a class="project-title">Looking to start a project?</a>
 
-        <div class="project-tile project1" onClick="window.location='./projects/home-automation.php'">
-            <div class="project-filter"></div>
-            <a>Home Automation</a>
+        <div class="home-content">
+            <a class="home-content-title">Looking to start a project?</a>
+            <div class="home-project">
+               <div class="home-project-tile"></div><!--
+            --><div class="home-project-tile"></div><!--
+            --><div class="home-project-tile"></div><!--
+            --><div class="home-project-tile"></div>
+            </div>
         </div>
-        <div class="project-tile project2" onClick="window.location='./projects/kodi-entertainment.php'">
-            <div class="project-filter"></div>
-            <a>Kodi Entertainment</a>
+
+        <div class="home-content">
+            <a class="home-content-title">About me</a>
+            <div class="home-aboutme">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula sodales lectus eu elementum. Nulla venenatis maximus nisl, vitae semper dolor venenatis sed. Praesent finibus orci arcu, eget malesuada ipsum ultricies porta. Vivamus tellus mi, luctus quis magna vel, laoreet iaculis dolor. Donec et pharetra massa. Cras gravida est vel ex consequat, vitae tempus ligula posuere. Curabitur at ultricies eros. Nunc et elit magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi ac odio aliquam, aliquet magna elementum, viverra nibh. Aenean molestie sodales sem at vehicula. Ut et nisi bibendum, elementum enim ac, fringilla dui. Aenean et ullamcorper est. Suspendisse justo urna, euismod at ante nec, ullamcorper dapibus eros. Nulla facilisi.</p>
+            </div>
         </div>
-    </div>
-    <div class="divider"></div>
-<?php
-$db = mysqli_connect('localhost', 'root', '', 'products')
-or die('Error connecting to MySQL server.');
-?>
-    <div class="products">
-        <div class="center">
-	        <a class="products-title">Featured Products</a>
-	        <div class="products-center">
-	            <?php 
-	            $products = Product::All();
-	            foreach ($products as $product){
-	            ?>
-	            <div class='product'>
+
+        <div class="home-content">
+            <a class="home-content-title">Featured Products</a>
+            <div class="home-featured-products">
+               <?php 
+                $products = Product::All();
+                foreach ($products as $product){
+                ?>
+                <div class="home-featured-product">
                     <img src="http://placehold.it/300x300">
-			        <h1><?= $product->product_name ?></h1>
-			        <p><?= $product->product_description ?></p>
-			        <p><?= $product->product_price ?></p>
-			        <p><?= $product->getStars() ?></p>
-	  			</div>
-	            <?php
-	            }
-	            ?>
-	        </div>
-        	<a class="products-view">View More</a>
-    	</div>
-    </div>
+                    <h1><?= $product->product_name ?></h1>
+                    <p><?= $product->getStars() ?></p>
+                    <p><?= $product->product_price ?></p>
+                    <a class="home-featured-product-btn" href="#">View Product</a>
+                </div><!--
+                -->
+                <?php
+                }
+                ?>
+                <div class="home-featured-products-anchor"></div>
+                <a href="#" class="home-featured-products-view">View More</a>
+            </div>
+        </div>
+
+
+    </div>    
+
 <?php
 include 'includes/foot.php';
 ?>
