@@ -1,12 +1,13 @@
 <?php
 include "includes/head.php";
 ?>
-    <div class="navigation-cutter">
-        <a href="index.php">Home&nbsp;>&nbsp;</a>
-        <a href="cart.php">Shopping Cart</a>
+    <div class="page">
+        <div class="page-inner"><a>Cart is under maintenance</a></div>
+        <div class="page-inner">
+        	<!--Placeholder Div -->
+        	<div style="height:400px;"></div>
+        </div>
     </div>
-
-    <a>Shopping cart out of order</a>
 <?php
 include 'includes/foot.php';
 ?>
