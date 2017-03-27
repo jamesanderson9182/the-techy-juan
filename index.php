@@ -4,7 +4,7 @@ include "models/product.php";
 ?>
     <div class="home-container">
         <div class="home-youtube">
-            <div class="home-youtube-main"><iframe width="640" height="360" src="https://www.youtube.com/embed/pQ9L3HUHEFs?autoplay=1" frameborder="0" allowfullscreen></iframe></div><!--
+            <div class="home-youtube-main"><iframe width="640" height="360" src="https://www.youtube.com/embed/pQ9L3HUHEFs?autoplay=0" frameborder="0" allowfullscreen></iframe></div><!--
             --><div class="home-login-signup">
                 <div class="home-login-signup-container">
                     <div class="home-login-signup-top">
