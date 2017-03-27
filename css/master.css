@@ -464,6 +464,15 @@
 		.home-featured-product{
 			width:48%;
 		}
+		.home-project{
+			white-space: normal;
+			text-align: center;
+			margin:1% auto;
+		}
+		.home-project-tile{
+			width:49%;padding-bottom:28%;
+			margin:.5%;
+		}
 	}
 	@media only screen and (max-width: 560px){
 		.home-featured-product-btn{
