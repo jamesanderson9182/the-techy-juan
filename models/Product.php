@@ -22,6 +22,9 @@ class Product extends Model
         return $productCollection;
     }
 
+    /**
+     * @return string Formatted Stars
+     */
     public function getStars()
     {
         $html = '';
