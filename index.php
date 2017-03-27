@@ -37,10 +37,18 @@ include "models/product.php";
         <div class="home-content">
             <a class="home-content-title">Looking to start a project?</a>
             <div class="home-project">
-               <div class="home-project-tile"></div><!--
-            --><div class="home-project-tile"></div><!--
-            --><div class="home-project-tile"></div><!--
-            --><div class="home-project-tile"></div>
+               <div class="home-project-tile">
+                    <div class="home-project-tile-shadow"></div>
+                    <img src="img/yt-preview-4.png"></div><!--
+            --><div class="home-project-tile">
+                    <div class="home-project-tile-shadow"></div>
+                    <img src="img/yt-preview-3.png"></div><!--
+            --><div class="home-project-tile">
+                    <div class="home-project-tile-shadow"></div>
+                    <img src="img/yt-preview-1.png"></div><!--
+            --><div class="home-project-tile">
+                    <div class="home-project-tile-shadow"></div>
+                    <img src="img/yt-preview-2.png"></div>
             </div>
         </div>
 
