@@ -1,5 +1,5 @@
 <?php
-include "Model.php";
+include_once("Model.php");
 
 class Product extends Model
 {
@@ -21,6 +21,8 @@ class Product extends Model
 
         return $productCollection;
     }
+
+
 
     /**
      * @return string Formatted Stars
@@ -66,5 +68,10 @@ SQL;
         }
 
         return $this->db->exec($sql);
+    }
+
+    public  static  function createTable() 
+    {
+        // create table
     }
 }

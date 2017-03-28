@@ -1,6 +1,7 @@
 <?php
 include "includes/head.php";
 include "models/product.php";
+include "models/Contact.php";
 ?>
 
     <div class="home-container">

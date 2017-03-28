@@ -26,4 +26,6 @@ abstract class Model
     }
 
     abstract public function save();
+
+    abstract static public function createTable();
 }
