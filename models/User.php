@@ -50,7 +50,7 @@ INSERT INTO {$this->tableName}
 	(FirstName,Surname,DateOfBirth,Password,Email,ProfileImage) 
 VALUES ("{$this->FirstName}","{$this->Surname}","{$this->DateOfBirth}","{$this->Password}","{$this->Email}","{$this->ProfileImage}");
 SQL;
-		echo $sql;
+		
             $this->isNewRecord = false;
         }
 

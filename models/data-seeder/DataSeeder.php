@@ -97,5 +97,3 @@ class DataSeeder
 
     }
 }
-
-new DataSeeder();
