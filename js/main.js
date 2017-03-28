@@ -52,14 +52,6 @@ mainJquery( document ).ready(function($) {
     	
 	});
 
-	$(".terms-and-privacy").click(function() {
-    	$(".terms").css('display','block');
-    	$('html,body').scrollTop(0);
-	});
-	$(".terms-close").click(function() {
-    	$(".terms").css('display','none');
-	});
-
     function Get(yourUrl){
         var Httpreq = new XMLHttpRequest(); // a new request
         Httpreq.open("GET",yourUrl,false);

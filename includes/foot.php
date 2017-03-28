@@ -6,7 +6,7 @@
     <span><i class="fa fa-google fa-2x" aria-hidden="true"></i></span>
 </div>
 <div class="footer">
-    <a class="footer-title">the Techy Juan&nbsp;&nbsp;|</a><a class="footer-title terms-and-privacy">&nbsp;&nbsp;Terms
+    <a class="footer-title">the Techy Juan&nbsp;&nbsp;|</a><a href="?popup=terms" class="footer-title terms-and-privacy">&nbsp;&nbsp;Terms
         and Privacy Policy</a>
     <div class="terms">
         <div class="terms-close"></div>

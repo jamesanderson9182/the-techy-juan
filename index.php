@@ -5,6 +5,7 @@ include "models/Contact.php";
 include "models/data-seeder/DataSeeder.php";
 //new DataSeeder();
 ?>
+
     <div class="home-container">
         <div class="home-youtube">
             <div class="home-youtube-main">
@@ -55,8 +56,8 @@ include "models/data-seeder/DataSeeder.php";
                     <img src="img/yt-preview-1.png"></div>
                 <div class="home-project-tile">
                     <div class="home-project-tile-shadow"></div>
-                    <img src="img/yt-preview-2.png"></div>
-            </div>
+                    <img src="<?php echo $project_thumbnail_4?>"></div>
+            </div></a>
         </div>
 
         <div class="home-content">

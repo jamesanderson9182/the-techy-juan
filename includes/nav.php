@@ -21,12 +21,12 @@
                 <li><a href="contact.php">CONTACT</a></li>
             </ul>
             <div class="mobile-navigation-drop-cart" onClick="window.location='cart.php'">
-                <a>View your Shopping Cart (0)</a>
+                <a href="?popup=cart">View your Shopping Cart (0)</a>
             </div>
             <div class="mobile-navigation-drop-account">
-                <a style="color:grey" href="#">Login</a>
+                <a style="color:grey" href="?popup=login">Login</a>
                 <a> or </a>
-                <a style="color:grey" href="#">Sign-up</a>
+                <a style="color:grey" href="?popup=signup">Sign-up</a>
             </div>
         </div>
 
@@ -35,11 +35,11 @@
     <div class="desktop-navigation">
         <div class="center">
             <div class="desktop-navigation-cart">
-                <a href="cart.php">Shopping Cart(0)</a>
+                <a href="?popup=cart">Shopping Cart(0)</a>
                 <a style="color:grey;">&nbsp;|&nbsp;</a>
-                <a href="#">Login</a>
+                <a href="?popup=login">Login</a>
                 <a style="color:grey;">&nbsp;|&nbsp;</a>
-                <a href="#">Sign-up</a>
+                <a href="?popup=signup">Sign-up</a>
             </div>
         </div>
         <div class="desktop-navigation-container">
