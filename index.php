@@ -87,7 +87,7 @@ include "models/data-seeder/DataSeeder.php";
                         <h1><?= $product->Name ?></h1>
                         <p><?= $product->getStars() ?></p>
                         <p><?= $product->getPrice() ?></p>
-                        <a class="home-featured-product-btn" href="/product/<?= $product->ProductID ?>">View Product</a>
+                        <a class="home-featured-product-btn" href="/product.php/<?= $product->ProductID ?>">View Product</a>
                     </div>
                     <?php
                 }

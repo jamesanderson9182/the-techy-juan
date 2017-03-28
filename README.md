@@ -23,9 +23,3 @@ Nice to have
 * Blog - Projects tab
 * Forum
 
-
-
-
-
-
-
