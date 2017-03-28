@@ -1,7 +1,9 @@
 <?php
 include "includes/head.php";
 include "models/product.php";
+include "popup/popup.php";
 ?>
+
     <div class="home-container">
         <div class="home-youtube">
             <div class="home-youtube-main"><iframe width="640" height="360" src="https://www.youtube.com/embed/pQ9L3HUHEFs?autoplay=0" frameborder="0" allowfullscreen></iframe></div><!--
