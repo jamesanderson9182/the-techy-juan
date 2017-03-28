@@ -24,9 +24,9 @@ function printOne($id)
     <div class='center'>
         <div class="product-container">
             <div class='product'>
-                <h1><?= $product->product_name ?></h1>
-                <p><?= $product->product_description ?></p>
-                <p><?= $product->product_price ?></p>
+                <h1><?= $product->Name ?></h1>
+                <p><?= $product->Description ?></p>
+                <p><?= $product->Price ?></p>
                 <p><?= $product->getStars() ?></p>
             </div>
         </div>
@@ -44,9 +44,9 @@ function printAll()
         foreach ($products as $product) {
             ?>
             <div class='product'>
-                <h1><a href="/product/<?= $product->product_id ?>"><?= $product->product_name ?></a></h1>
-                <p><?= $product->product_description ?></p>
-                <p><?= $product->product_price ?></p>
+                <h1><a href="/product/<?= $product->ProductID ?>"><?= $product->Name ?></a></h1>
+                <p><?= $product->Description ?></p>
+                <p><?= $product->Price ?></p>
                 <p><?= $product->getStars() ?></p>
             </div>
             <?php
