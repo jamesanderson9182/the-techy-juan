@@ -11,8 +11,11 @@ Todo
 	- Profile Picture
 	- Payment Tunnel?..??
 * Shopping cart - Paypal
-* Products page with categories and sort[]
-* Product info page
+* Products page[Done]
+* Sort function for products
+* Product info page [Done] -> Needs design work however
+* Back end system to view and fulfill orders
+* CRUD system for Products and Blog posts
 
 Nice to have
 ============
