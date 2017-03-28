@@ -1,10 +1,11 @@
 <?php
 
-
 include_once("Model.php");
-class User extends Model{
 
-	public $UserID;
+class User extends Model
+{
+
+    public $UserID;
     public $FirstName;
     public $Surname;
     public $DateOfBirth;
@@ -12,13 +13,36 @@ class User extends Model{
     public $Email;
     public $ProfileImage;
 
-	public function __construct($id = null){
+    public function __construct($id = null)
+    {
         $this->tableName = 'User';
         $this->uniqueIdentifierColumnName = 'UserID';
         return parent::__construct($id);
     }
 
-	public static function All(){
+    /**
+     * @throws Exception if the user already exists
+     */
+    public function checkDuplicateUser()
+    {
+        $result = $this->db->query('SELECT * FROM User WHERE Email = ' . $this->Email)->execute();
+        if ($result->rowCount() > 0) {
+            throw new Exception('User Already Exists');
+        }
+        /**
+         * Uncomment below when we are using $username
+         */
+        /*
+        $result = $this->db->query('SELECT * from User WHERE Username = ' . $this->Username)->execute();
+        if($result->rowCount() > 0)
+        {
+            throw new Exception('User Already Exists');
+        }
+        */
+    }
+
+    public static function All()
+    {
         $db = new PDO('mysql:host=localhost;dbname=products;charset=utf8mb4', 'root', '');
         $Users = $db->query("SELECT * FROM User", PDO::FETCH_OBJ)->fetchAll(PDO::FETCH_CLASS, 'User');
 
@@ -30,7 +54,11 @@ class User extends Model{
         return $UserCollection;
     }
 
-     public function save(){
+    /**
+     * @return int
+     */
+    public function save()
+    {
         $sql = <<<SQL
 UPDATE {$this->tableName} SET 
     UserID = '{$this->UserID}',
@@ -42,15 +70,16 @@ UPDATE {$this->tableName} SET
     ProfileImage= '{$this->ProfileImage}'
 WHERE UserID = {$this->UserID};
 SQL;
-		
+
         // We reassign the $sql variable only if there is a new record
         if ($this->isNewRecord) {
+            $this->checkDuplicateUser();
             $sql = <<<SQL
 INSERT INTO {$this->tableName} 
 	(FirstName,Surname,DateOfBirth,Password,Email,ProfileImage) 
 VALUES ("{$this->FirstName}","{$this->Surname}","{$this->DateOfBirth}","{$this->Password}","{$this->Email}","{$this->ProfileImage}");
 SQL;
-		
+
             $this->isNewRecord = false;
         }
 
