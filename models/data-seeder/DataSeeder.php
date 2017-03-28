@@ -1,5 +1,7 @@
 <?php
 
+include_once "../Product.php";
+include_once "../User.php";
 class DataSeeder
 {
     public function __construct()
@@ -10,7 +12,9 @@ class DataSeeder
     private function seedData()
     {
         $this->seedProducts();
+        $this->seedUsers();
     }
+
 
     private function seedProducts()
     {
@@ -52,4 +56,46 @@ class DataSeeder
         $product->save();
     }
 
+    private function seedUsers(){
+        User::createTable();
+
+        $User  = new User();
+        $User->FirstName       = "Fname";
+        $User->Surname         = "lname";
+        $User->DateOfBirth     = date("Y-m-d",time());
+        $User->Password        = "789654123";
+        $User->Email           = "asdufyh@sdaf.cdom";
+        $User->ProfileImage    = "lorempixel.com/50/50";
+        $User->save();
+
+        $User  = new User();
+        $User->FirstName       = "Donald ";
+        $User->Surname         = "Duck";
+        $User->DateOfBirth     = date("Y-m-d",time());
+        $User->Password        = "789654123";
+        $User->Email           = "asdfsadufyh@sddfaf.cdom";
+        $User->ProfileImage    = "lorempixel.com/50/50";
+        $User->save();
+
+        $User  = new User();
+        $User->FirstName       = "Park";
+        $User->Surname         = "jurassic";
+        $User->DateOfBirth     = date("Y-m-d", time());
+        $User->Password        = "789654123";
+        $User->Email           = "asdfs@sdaf.cdom";
+        $User->ProfileImage    = "lorempixel.com/50/50";
+        $User->save();
+
+        $User  = new User();
+        $User->FirstName="Nehru";
+        $User->Surname="Reuben Knapp";
+        $User->Email="dictum.cursus@eutempor.com";
+        $User->Password="Martina";
+        $User->DateOfBirth="10/02/18";
+        $User->ProfileImage    = "lorempixel.com/50/50";
+        $User->save();
+
+    }
 }
+
+new DataSeeder();

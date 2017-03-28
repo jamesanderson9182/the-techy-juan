@@ -2,6 +2,7 @@
 include "includes/head.php";
 include "models/product.php";
 include "models/Contact.php";
+include "models/User.php";
 include "models/data-seeder/DataSeeder.php";
 //new DataSeeder();
 ?>
