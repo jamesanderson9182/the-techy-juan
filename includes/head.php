@@ -14,5 +14,6 @@
     <script src="/js/main.js"></script>
 </head>
 <?php
-include 'nav.php'
+include 'nav.php';
+include 'popup/popup.php';
 ?>
