@@ -57,7 +57,7 @@
                     <li class="desktop-navigation-li"><a href="contact.php">Contact</a></li>
                 </ul>
                 <div class="desktop-navigation-search">
-                    <span class="desktop-navigation-search-icon"><i class="fa fa-search"></i></span>
+                    <a href="#" class="desktop-navigation-search-icon"><i class="fa fa-search"></i></a>
                     <input type="search" id="search" placeholder="Search..." />
                 </div>
             </div>

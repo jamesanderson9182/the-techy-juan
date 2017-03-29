@@ -7,8 +7,8 @@ include "models/Contact.php";
 //new DataSeeder();
 ?>
 
-    <div class="home-container">
-        <div class="home-youtube">
+    <div class="page">
+        <div class="home-youtube page-inner">
             <div class="home-youtube-main">
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/pQ9L3HUHEFs?autoplay=0"
                         frameborder="0" allowfullscreen></iframe>
@@ -43,7 +43,7 @@ include "models/Contact.php";
             </div>
         </div>
 
-        <div class="home-content">
+        <div class="page-inner">
             <a class="home-content-title">Looking to start a project?</a>
             <div class="home-project">
                 <?php include "/includes/projectsConfig.php";?>
@@ -62,7 +62,7 @@ include "models/Contact.php";
             </div></a>
         </div>
 
-        <div class="home-content">
+        <div class="page-inner">
             <a class="home-content-title">About me</a>
             <div class="home-aboutme">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula sodales lectus eu elementum.
@@ -76,7 +76,7 @@ include "models/Contact.php";
             </div>
         </div>
 
-        <div class="home-content">
+        <div class="page-inner">
             <a class="home-content-title">Featured Products</a>
             <div class="home-featured-products">
                 <?php

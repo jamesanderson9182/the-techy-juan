@@ -1,7 +1,12 @@
 /*/////////////////////////////////////////
 	Developed by Starr Development
 /////////////////////////////////////////*/
-	body{width:100%;margin:0;font-family:helvetica;background-color: lightgrey;}
+	body{
+		width:100%;
+		margin:0;
+		font-family:helvetica;
+		background-color: lightgrey;
+	}
 /*/////////////////////////////////////////
 	Essentials
 /////////////////////////////////////////*/
@@ -24,11 +29,16 @@
 	}
 	.page-inner{
 		width:98%;height:auto;
-		margin:1%;
+		margin:0 auto 1% auto;
 		background-color:white;
 		position:relative;
+		overflow: hidden;
 	}
-
+	.center{
+		width:100%;height:auto;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 /*/////////////////////////////////////////
 	Navigation
 /////////////////////////////////////////*/
@@ -42,7 +52,6 @@
 		width:100%;height:90px;
 		margin:0;
 	}
-
 	.mobile-navigation{
 		width:100%;height:60px;
 		background-color:#212121;
@@ -128,14 +137,15 @@
 		overflow: hidden;
 	}
 		.desktop-navigation-container{
-			width:100%;max-width:1100px;
+			width:100%;max-width:1200px;
 			height:60px;
 			margin:0 auto;
 			position: relative;
 		}
 		.desktop-navigation-cart{
-			width:100%;height:30px;
+			width:auto;height:30px;
 			text-align:right;
+			margin:0 14px 0 0;
 		}
 		.desktop-navigation-cart a{
 			text-decoration: none;
@@ -185,7 +195,7 @@
 		}
 		.desktop-navigation-search{
 			height:30px;width:200px;
-			margin:15px 0 15px 10px;
+			margin:15px 15px 15px 10px;
 			overflow: hidden;
 			position: relative;
 			display: inline-block;
@@ -195,11 +205,16 @@
   			top: 7px;right:10px;
   			z-index: 1;
   			color: #4f5b66;
+  			transition:transform 1s ease-in-out;
+		}
+		.desktop-navigation-search-icon:hover{
+			transform: scale(1.1);
+			color:#212121;
 		}
 		.desktop-navigation-search input{
 			margin:0 10px 0 0;
 			height:30px;
-			border-radius: 5px;
+			border:none;
 			line-height: normal;
 			padding:4px 0 0 10px;
 		}
@@ -233,9 +248,10 @@
 	SOCIAL MEDIA
 /////////////////////////////////////////*/
 	.social{
-		width:90%;height:auto;
+		width:100%;height:auto;
 		text-align: center;
 		margin:20px auto;
+		overflow: hidden;
 	}
 	.social span{
 		margin:0 20px;
@@ -252,11 +268,6 @@
 		overflow: hidden;
 		white-space: nowrap;
 	}
-
-	.home-youtube{
-		width:98%;height:auto;
-		margin:1%;
-	}
 	.home-youtube-main{
 		width:70%;padding-bottom:39%;
 		background-color: grey;
@@ -269,7 +280,11 @@
 		top:0;left:0;
 		width:100%;height:100%;
 	}
-
+	.home-youtube{
+		white-space: nowrap;
+		background-color:transparent;
+		margin-top:1%;
+	}
 
 	.home-login-signup{
 		width:29%;padding-bottom:39%;
@@ -326,14 +341,6 @@
 		width:100%;height:100%;
 		white-space: normal;
 		display: none;
-	}
-
-	.home-content{
-		width:98%;height:auto;
-		background-color: white;
-		margin:1% auto;
-		position: relative;
-		overflow: hidden;
 	}
 	.home-content-title{
 		text-align: left;
@@ -449,106 +456,6 @@
 		.home-featured-product-btn{
 			max-width:80%;
 		}
-	}	
-/*/////////////////////////////////////////
-	PROJECT PANEL
-/////////////////////////////////////////*/
-	.project{
-		width:90%;height:auto;
-		max-width: 1200px;
-		margin:20px auto 0 auto;
-		overflow:hidden;
-		text-align: center;
-	}
-	.project-viewmore{
-		display:block;
-		padding:10px;
-		text-decoration: none;
-		color:grey;
-	}
-	.project-viewmore:hover{
-		color:#212121;
-	}
-	.project-title{
-		text-align: left;
-		margin:10px 0 20px 0;
-		font-size:20px;
-		display: block;
-	}
-	.project-tile{
-		width:100%;height:auto;
-		max-width:529px;
-		display: inline-block;
-		background-color:grey;
-		margin:8px 4px;
-		text-align: center;
-		position: relative;
-		background-position:center;
-		background-size:cover;
-		background-repeat: no-repeat;
-		cursor:pointer;
-	}
-	.project-tile a{
-		position: relative;
-		z-index: 5;
-		font-size:17px;
-		color:white;
-		display: block;
-		padding:20px 0 17px 0;
-	}
-	.project-filter{
-		position:absolute;
-		right:0;left:0;top:0;bottom:0;
-		background-color:rgba(0,0,0,0.7);
-		z-index:4;
-	}
-	.project1{
-		background-image: url("../img/project-1.png");
-	}
-	.project2{
-		background-image: url("../img/project-2.png");
-	}
-/*/////////////////////////////////////////
-	FEATURED PRODUCTS
-/////////////////////////////////////////*/
-	.f-products{
-		width:90%;height:auto;
-		max-width: 1200px;
-		margin:20px auto 0 auto;
-		overflow:hidden;
-	}
-	.f-products-title{
-		font-size:20px;
-		display: block;
-		margin:0;
-	}
-	.f-products-center{
-		width:100%;height: auto;
-		text-align: left;
-	}
-	.f-product{
-		width:30%;height:auto;
-		max-width:200px;
-		text-align: center;
-		display: inline-block;
-		margin:20px 1% 10px 1%;
-		text-align:center;
-	}
-	.f-product-image{
-		width:100%;padding-bottom:100%;
-		background-color:grey;
-	}
-	.f-product h1{
-		font-size:20px;
-		display: block;
-		padding:5px 0;
-	}
-	.f-products-view{
-		color:grey;
-		text-decoration: none;fv
-	}
-	.f-products-view:hover{
-		color:#212121;
 	}
 /*/////////////////////////////////////////
 	TERMS AND CONDITIONS
@@ -557,90 +464,87 @@
 /*/////////////////////////////////////////
 	PRODUCTS PAGE
 /////////////////////////////////////////*/
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-}
+	.product-container {
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+	.product {
 
-.product {
-
-    background: #717171;
-    width: 300px;
-    height: 355px;
-    margin: 60px;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 3px;
-    color: white;
-}
-
-.back-button-link {
-    background: rgb(13, 92, 150);
-    margin-top: 20px;
-    margin-left: 8px;
-    position: absolute;
-    color: #fff;
-    padding: 5px;
-    border-radius: 3px;
-}
+	    background: #717171;
+	    width: 300px;
+	    height: 355px;
+	    margin: 60px;
+	    padding: 10px;
+	    display: inline-block;
+	    border-radius: 3px;
+	    color: white;
+	}
+	.back-button-link {
+	    background: rgb(13, 92, 150);
+	    margin-top: 20px;
+	    margin-left: 8px;
+	    position: absolute;
+	    color: #fff;
+	    padding: 5px;
+	    border-radius: 3px;
+	}
 /*/////////////////////////////////////////
 	Popup
 /////////////////////////////////////////*/
-#popup-container{
-	position: absolute;
-	right:0;top:0;bottom:0;left:0;
-	margin:0;
-	background-color:rgba(0,0,0,0.5);
-	z-index:2000;
-}
-#popup{
-	position:absolute;
-	right:0;left:0;top:20%;
-	margin:0 auto;
-	width:100%;height:100%;
-	background-color:white;
-	width:30%;height:40%;
-	overflow: hidden;
-}
-#popup-exit{
-	position: absolute;
-	right:12px;top:8px;
-	z-index: 2;
-	color:black;
-	transition:color .6s ease-in-out;
-}
-#popup-exit:hover,#popup-exit:focus{
-	color:orange;
-	cursor:pointer;
-	text-shadow: 0 0 1px #000;
-}
-#popup-title-container{
-	position:relative;
-	background-color: lightgrey;
-}
-#popup-title{
-	padding:13px 0 12px 20px;
-	display: block;
-	font-size:20px;
-	text-align: left;
-}
-#popup-content{
-	position: relative;
-	width:100%;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-@media only screen and (max-width: 960px){
-	#popup{
-		width:80%;height:70%;
+	#popup-container{
+		position: absolute;
+		right:0;top:0;bottom:0;left:0;
+		margin:0;
+		background-color:rgba(0,0,0,0.5);
+		z-index:2000;
 	}
-}
-@media only screen and (max-width: 500px){
 	#popup{
-		width:90%;height:70%;
+		position:absolute;
+		right:0;left:0;top:20%;
+		margin:0 auto;
+		width:100%;height:100%;
+		background-color:white;
+		width:30%;height:40%;
+		overflow: hidden;
 	}
-}
-
+	#popup-exit{
+		position: absolute;
+		right:12px;top:8px;
+		z-index: 2;
+		color:black;
+		transition:color .6s ease-in-out;
+	}
+	#popup-exit:hover,#popup-exit:focus{
+		color:orange;
+		cursor:pointer;
+		text-shadow: 0 0 1px #000;
+	}
+	#popup-title-container{
+		position:relative;
+		background-color: lightgrey;
+	}
+	#popup-title{
+		padding:13px 0 12px 20px;
+		display: block;
+		font-size:20px;
+		text-align: left;
+	}
+	#popup-content{
+		position: relative;
+		width:100%;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	@media only screen and (max-width: 960px){
+		#popup{
+			width:80%;height:70%;
+		}
+	}
+	@media only screen and (max-width: 500px){
+		#popup{
+			width:90%;height:70%;
+		}
+	}
 /*/////////////////////////////////////////
 	END
 /////////////////////////////////////////*/
