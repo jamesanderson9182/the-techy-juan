@@ -13,32 +13,12 @@ include "models/Contact.php";
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/pQ9L3HUHEFs?autoplay=0"
                         frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="home-login-signup">
-                <div class="home-login-signup-container">
-                    <div class="home-login-signup-top">
-                        <a class="home-login-click" style="background-color:white;">Login</a><a
-                                class="home-signup-click" style="background-color:grey;">Sign-Up</a>
-                    </div>
-                    <div class="home-login">
-                        <form>
-                            <input type="text" name="email" placeholder="Email Address or Username">
-                            <input type="text" name="password" placeholder="Password">
-                        </form>
-                        <div class="home-login-signup-submit">
-                            <a>Login</a>
-                        </div>
-                    </div>
-                    <div class="home-signup">
-                        <form>
-                            <input type="text" name="firstname" placeholder="Name">
-                            <input type="text" name="username" placeholder="Username">
-                            <input type="text" name="email" placeholder="Email Address">
-                            <input type="text" name="password" placeholder="Password">
-                        </form>
-                        <div class="home-login-signup-submit">
-                            <a>Sign-Up</a>
-                        </div>
-                    </div>
+            <div class="home-top-content">
+                <div class="home-top-content-container">
+                    <a class="home-top-content-title">Header Title</a>
+                    <div class="home-top-content-divider"></div>
+                    <a class="home-top-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula sodales lectus eu elementum. Nulla venenatis maximus nisl, vitae semper dolor venenatis sed. Praesent finibus orci arcu, eget malesuada ipsum ultricies porta. Vivamus tellus mi, luctus quis magna vel, laoreet iaculis dolor. Donec et pharetra massa. Cras gravida est vel ex consequat, vitae tempus ligula posuere. Curabitur at ultricies eros.</a>
+                    <a href="#" class="home-top-content-btn">Get Started</a>
                 </div>
             </div>
         </div>
