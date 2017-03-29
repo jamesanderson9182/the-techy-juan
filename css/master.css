@@ -208,10 +208,11 @@
   			z-index: 1;
   			color: #4f5b66;
   			transition:transform 1s ease-in-out;
+  			transition:color .5s ease-in-out;
 		}
 		.desktop-navigation-search-icon:hover{
 			transform: scale(1.1);
-			color:#212121;
+			color:darkorange;
 		}
 		.desktop-navigation-search input{
 			margin:0 10px 0 0;
