@@ -38,6 +38,7 @@
 		width:100%;height:auto;
 		max-width: 1200px;
 		margin: 0 auto;
+		position: relative;
 	}
 /*/////////////////////////////////////////
 	Navigation
@@ -303,18 +304,37 @@
 /*/////////////////////////////////////////
 	Footer
 /////////////////////////////////////////*/
-	.footer{
-		width:100vw;height:60px;
+	#footer{
+		width:100vw;height:80px;
 		background-color:#212121;
 		text-align: center;
 		margin:.7% 0 0 0;
+		position: relative;
+		overflow: hidden;
 	}
-	.footer-title{
+	#footer-title{
 		color:white;
 		font-size:13px;
 		display: inline-block;
-		padding:22px 0;
+		padding:22px 0 10px 0;
 		text-decoration: none;
+	}
+	#footer span{
+		display: block;
+		padding: 0 0 12px;
+	}
+	#footer span i{
+		color:white;
+		display: inline-block;
+		padding:0;
+		margin:0 6px;
+		-webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+		transform: scale(1.5);
+		transition:transform .2s ease;
+	}
+	#footer span i:hover{
+		transform: scale(2.5);
 	}
 /*/////////////////////////////////////////
 	SOCIAL MEDIA
@@ -530,33 +550,144 @@
 /*/////////////////////////////////////////
 	TERMS AND CONDITIONS
 /////////////////////////////////////////*/
-	
 /*/////////////////////////////////////////
-	PRODUCTS PAGE
+	SINGLE PRODUCT PAGE
 /////////////////////////////////////////*/
-	.product-container {
-	    display: flex;
-	    flex-wrap: wrap;
+	.product-page-back{
+		text-align: left;
+		color:grey;
+		display: inline-block;
+		text-decoration: none;
+		padding:10px 0;
+		margin:0;
 	}
-	.product {
-
-	    background: #717171;
-	    width: 300px;
-	    height: 355px;
-	    margin: 60px;
-	    padding: 10px;
-	    display: inline-block;
-	    border-radius: 3px;
-	    color: white;
+	.product-page-back-span{
+		padding-left:10px;
 	}
-	.back-button-link {
-	    background: rgb(13, 92, 150);
-	    margin-top: 20px;
-	    margin-left: 8px;
-	    position: absolute;
-	    color: #fff;
-	    padding: 5px;
-	    border-radius: 3px;
+	#product-page-image-container{
+		width:40%;height:auto;
+		margin:1%;
+		display: inline-block;
+		vertical-align: top;
+		overflow: hidden;
+		text-align: left;
+	}
+	#product-page-image{
+		position: relative;
+		width:100%;padding-bottom:100%;
+		margin:0;
+		text-align: left;
+		display: inline-block;
+		vertical-align: top;
+		
+	}
+	#product-page-image-more{
+		display: block;
+		margin:0;
+		width:100%;padding-bottom:25%;
+		position: relative;
+		overflow-x:scroll;
+		overflow-y:hidden;
+	}
+	#product-page-image-more-inner{
+		position: absolute;
+		left:0;top:0;
+		width:100%;
+		height: 100%;
+	}
+	
+	.product-page-image-more-tile{
+		display: inline-block;
+		height:100%;width:25%;
+		position: relative;
+	}
+	.product-page-image-more-tile div{
+		position: absolute;
+		right:0;left:0;top:0;bottom:0;
+		border:solid 1px grey;
+	}
+	.product-page-image-more-tile img{
+		position: absolute;
+		right:0;left:0;
+		top:0;bottom:0;
+		background-color:green;
+	}
+	#product-page-image img{
+		position: absolute;
+		left:0;top:0;
+		width: 100%;height:100%;
+	}
+	#product-page-main-container{
+		width:100%;height:auto;
+		white-space: nowrap;
+		text-align: center;
+		margin:0;
+	}
+	#product-page-right-container{
+		width:57%;padding-bottom:48%;
+		margin:1% 1% 1% 0;
+		text-align: left;
+		display: inline-block;
+		vertical-align: top;
+		overflow: hidden;
+		position: relative;
+	}
+	#product-page-right-insert{
+		position: absolute;
+		left:0;top:0;
+		width:100%;height:100%;
+		background-color:white;
+		color:#212121;
+	}
+	@media only screen and (max-width: 960px){
+		#product-page-right-container{
+			width:100%;
+			display: block;
+			text-align: center;
+		}
+		#product-page-image-container{
+			width:100%;
+			display: block;
+			margin:0;
+		}
+	}
+/*/////////////////////////////////////////
+	MAIN PRODUCTS PAGE
+/////////////////////////////////////////*/
+	.products-page-tile{
+		width:23.7%;height:auto;
+		background-color: white;
+		display: inline-block;
+		margin:1% .5% 0 .5%;
+		overflow: hidden;
+		vertical-align: top;
+	}
+	.products-page-tile img{}
+	.products-page-wrap{
+		text-decoration: none;
+		color:#212121;
+	}
+	.products-page-container{
+		width:100%;height:auto;
+		text-align: center;
+		margin:0 auto;
+	}
+	#products-page-top{text-align: right;}
+	#products-page-top a{
+		display: inline-block;
+		padding:10px;
+		color:#212121;
+		text-decoration: none;
+	}
+	@media only screen and (max-width: 960px){
+		.products-page-tile{
+			width:32%;
+		}
+	}
+	@media only screen and (max-width: 660px){
+		.products-page-tile{
+			width:49%;
+		}
 	}
 /*/////////////////////////////////////////
 	Popup

@@ -15,15 +15,15 @@
 
         <div class="mobile-navigation-drop">
             <ul>
-                <li><a href="index.php">HOME</a></li>
+                <li><a href="/index.php">HOME</a></li>
                 <div class="mobile-navigation-underline"></div>
-                <li><a href="shop.php">SHOP</a></li>
+                <li><a href="/product.php">SHOP</a></li>
                 <div class="mobile-navigation-underline"></div>
-                <li><a href="forum.php">FORUM</a></li>
+                <li><a href="/forum.php">FORUM</a></li>
                 <div class="mobile-navigation-underline"></div>
-                <li><a href="blog.php">BLOG</a></li>
+                <li><a href="/blog.php">BLOG</a></li>
                 <div class="mobile-navigation-underline"></div>
-                <li><a href="contact.php">CONTACT</a></li>
+                <li><a href="/contact.php">CONTACT</a></li>
             </ul>
             <div class="mobile-navigation-drop-cart" onClick="window.location='cart.php'">
                 <a href="?popup=cart">View your Shopping Cart (0)</a>
@@ -53,15 +53,15 @@
             </a>
             <div class="desktop-navigation-right">
                 <ul>
-                    <li class="desktop-navigation-li"><a href="index.php">Home</a></li>
+                    <li class="desktop-navigation-li"><a href="/index.php">Home</a></li>
                     <li class="desktop-navigation-div"></li>
-                    <li class="desktop-navigation-li"><a href="shop.php">Shop</a></li>
+                    <li class="desktop-navigation-li"><a href="/product.php">Shop</a></li>
                     <li class="desktop-navigation-div"></li>
-                    <li class="desktop-navigation-li"><a href="forum.php">Forum</a></li>
+                    <li class="desktop-navigation-li"><a href="/forum.php">Forum</a></li>
                     <li class="desktop-navigation-div"></li>
-                    <li class="desktop-navigation-li"><a href="blog.php">Blog</a></li>
+                    <li class="desktop-navigation-li"><a href="/blog.php">Blog</a></li>
                     <li class="desktop-navigation-div"></li>
-                    <li class="desktop-navigation-li"><a href="contact.php">Contact</a></li>
+                    <li class="desktop-navigation-li"><a href="/contact.php">Contact</a></li>
                 </ul>
                 <div class="desktop-navigation-search">
                     <a href="#" class="desktop-navigation-search-icon"><i class="fa fa-search"></i></a>

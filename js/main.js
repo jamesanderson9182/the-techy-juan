@@ -11,7 +11,7 @@ mainJquery( document ).ready(function($) {
 
     	if($mobileNavOpen === false){
     		$(".mobile-navigation-drop").css('display', 'block');
-    		$(".mobile-navigation-logo").css('background-image', 'url("img/main-logo-inverted.png")');
+    		$(".mobile-navigation-logo").css('background-image', 'url("/img/main-logo-inverted.png")');
     		$(".mobile-navigation-btn").addClass("open");
     		$(".mobile-navigation").css('background-color', 'white');
     		$(".filter").css('display','block');
@@ -23,7 +23,7 @@ mainJquery( document ).ready(function($) {
     	}
     	else{
     		$(".mobile-navigation-drop").css('display', 'none');
-    		$(".mobile-navigation-logo").css('background-image', 'url("img/main-logo.png")');
+    		$(".mobile-navigation-logo").css('background-image', 'url("/img/main-logo.png")');
     		$(".mobile-navigation-btn").removeClass("open");
     		$(".mobile-navigation").css('background-color', '#212121');
     		$(".mobile-navigation").css('border-bottom', 'none');
@@ -35,6 +35,13 @@ mainJquery( document ).ready(function($) {
     	}
     	
 	});
+    $("#footer span i").hover(function() { // Mouse over
+        $(this).siblings().stop().fadeTo(300, 0.6);
+        $(this).parent().siblings().stop().fadeTo(300, 0.3); 
+    }, function() { // Mouse out
+        $(this).siblings().stop().fadeTo(300, 1);
+        $(this).parent().siblings().stop().fadeTo(300, 1);
+    });
 	$(".product-page-description-show").click(function() {
 
     	if($showDescription === false){

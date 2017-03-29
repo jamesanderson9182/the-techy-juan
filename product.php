@@ -20,14 +20,64 @@ function printOne($id)
 {
     $product = new Product($id)
     ?>
-    <a href="/product/" class="back-button-link" ">All Products</a>
-    <div class='center'>
-        <div class="product-container">
-            <div class='product'>
-                <h1><?= $product->Name ?></h1>
-                <p><?= $product->Description ?></p>
-                <p><?= $product->Price ?></p>
-                <p><?= $product->getStars() ?></p>
+    <div class="page">
+        <div class="page-inner" style="text-align: left;">
+            <span class="product-page-back-span">
+            <a class="product-page-back" href="/product.php/">Products&nbsp;/&nbsp;</a>
+            <a class="product-page-back" href="/product.php/<?= $product->ProductID ?>"><?= $product->Name ?></a>
+            </span>
+        </div>
+        <div class="page-inner">
+            <div id="product-page-main-container">
+                <div id="product-page-image-container">
+                    <div id="product-page-image">
+                        <img src="http://placehold.it/300x300">
+                    </div><!--
+                    --><div id="product-page-image-more">
+                        <div id="product-page-image-more-inner">
+                            <div class="product-page-image-more-tile">
+                                <img src="http://placehold.it/300x300">
+                                <div></div>
+                            </div><!--
+                            --><div class="product-page-image-more-tile">
+                                <img src="http://placehold.it/300x300">
+                                <div></div>
+                            </div><!--
+                            --><div class="product-page-image-more-tile">
+                                <img src="http://placehold.it/300x300">
+                                <div></div>
+                            </div><!--
+                            --><div class="product-page-image-more-tile">
+                                <img src="http://placehold.it/300x300">
+                                <div></div>
+                            </div><!--
+                            --><div class="product-page-image-more-tile">
+                                <img src="http://placehold.it/300x300">
+                                <div></div>
+                            </div><!--
+                            --><div class="product-page-image-more-tile">
+                                <img src="http://placehold.it/300x300">
+                                <div></div>
+                            </div><!--
+                            --><div class="product-page-image-more-tile">
+                                <img src="http://placehold.it/300x300">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--
+                --><div id="product-page-right-container">
+                    <div id="product-page-right-insert">
+                        <div id="product-page-title">
+                            <h1><?= $product->Name ?></h1>
+                        </div>
+                        <div id="product-page-desc">
+                            <p><?= $product->Description ?></p>
+                            <p><?= $product->Price ?></p>
+                            <p><?= $product->getStars() ?></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -38,19 +88,23 @@ function printAll()
 {
     $products = Product::All();
     if (sizeof($products) > 0) {
-        print "<div class='center'>";
-        print '<div class="product-container">';
+        print "<div class='page'>";
+        include "/includes/shop_top.php";
+        print '<div class="page-inner">';
+        print '<div class="products-page-container">';
+        print '<div class="products-page-tile">';
         /** @var Product $product */
         foreach ($products as $product) {
             ?>
-            <div class='product'>
-                <h1><a href="/product/<?= $product->ProductID ?>"><?= $product->Name ?></a></h1>
-                <p><?= $product->Description ?></p>
-                <p><?= $product->Price ?></p>
+                <a href="/product.php/<?= $product->ProductID ?>" class="products-page-wrap">
+                <img src="http://placehold.it/300x300">
+                <h1><?= $product->Name ?></h1>
+                <p>$<?= $product->Price ?></p>
                 <p><?= $product->getStars() ?></p>
-            </div>
-            <?php
+                </a>
+            </div><div class='products-page-tile'><?php
         }
+        print "</div>";
         print "</div>";
         print "</div>";
     } else {
