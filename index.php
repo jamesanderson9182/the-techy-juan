@@ -15,8 +15,8 @@ include "models/Contact.php";
             </div>
             <div class="home-top-content">
                 <div class="home-top-content-container">
-                    <a class="home-top-content-title">Header Title</a>
-                    <div class="home-top-content-divider"></div>
+                    <a class="home-top-content-title">Header Title</a><!--
+                    --><div class="home-top-content-divider"></div>
                     <a class="home-top-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula sodales lectus eu elementum. Nulla venenatis maximus nisl, vitae semper dolor venenatis sed. Praesent finibus orci arcu, eget malesuada ipsum ultricies porta. Vivamus tellus mi, luctus quis magna vel, laoreet iaculis dolor. Donec et pharetra massa. Cras gravida est vel ex consequat, vitae tempus ligula posuere. Curabitur at ultricies eros.</a>
                     <a href="#" class="home-top-content-btn">Get Started</a>
                 </div>
@@ -25,6 +25,7 @@ include "models/Contact.php";
 
         <div class="page-inner">
             <a class="home-content-title">Looking to start a project?</a>
+            <div class="home-content-divider"></div>
             <div class="home-project">
                 <?php include "/includes/projectsConfig.php";?>
                <a href="<?php echo $project_link_1?>"><div class="home-project-tile">
@@ -44,6 +45,7 @@ include "models/Contact.php";
 
         <div class="page-inner">
             <a class="home-content-title">About me</a>
+            <div class="home-content-divider"></div>
             <div class="home-aboutme">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula sodales lectus eu elementum.
                     Nulla venenatis maximus nisl, vitae semper dolor venenatis sed. Praesent finibus orci arcu, eget
@@ -58,6 +60,7 @@ include "models/Contact.php";
 
         <div class="page-inner">
             <a class="home-content-title">Featured Products</a>
+            <div class="home-content-divider"></div>
             <div class="home-featured-products">
                 <?php
                 /** @var $product Product */

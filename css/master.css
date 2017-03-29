@@ -393,6 +393,7 @@
 		vertical-align: top;
 		margin:0 0 0 1%;
 		position: relative;
+		text-align: center;
 	}
 	.home-top-content-container{
 		position:absolute;
@@ -403,17 +404,22 @@
 	.home-top-content-title{
 		display: block;
 		text-align: left;
-		padding:20px 20px 10px 20px;
+		padding:20px 20px 10px 5%;
 		font-size:20px;
 	}
 	.home-top-content-divider{
 		width:90%;height:1px;
 		background-color: #212121;
-		margin:0 auto;
+		margin:0 4.5% 0 4%;
+	}
+	.home-content-divider{
+		width:100%;height:1px;
+		background-color: lightgrey;
+		margin:10px 0 4px;
 	}
 	.home-top-content-text{
 		display: block;
-		padding:10px 20px;
+		padding:10px 5% 10px 5%;
 		margin:0 auto;
 		text-align: left;
 		white-space: normal;
@@ -422,11 +428,11 @@
 		display: block;
 		padding:15px 20px 12px 20px;
 		max-width:50%;
-		margin:0 auto;
+		margin:50px auto 0 auto;
 		color:#212121;
 		border:solid 1px #212121;
 		position: absolute;
-		bottom:20px;right:0;left:0;
+		right:20px;bottom:15px;
 		text-decoration: none;
 	}
 	.home-top-content-btn:hover,.home-top-content-btn:focus{
@@ -510,14 +516,15 @@
 		background-color: white;
 	}
 	.home-aboutme{
-		width:98%;height:auto;
+		width:97%;height:auto;
 		background-color:white;
 		margin:1% auto;
 		white-space: normal;
+		text-align: left;
 	}
 	.home-aboutme p{
 		display: block;
-		padding:1%;
+		padding:0;
 		color:black;
 	}
 	@media only screen and (max-width: 960px){
