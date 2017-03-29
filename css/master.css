@@ -565,6 +565,11 @@
 		padding:0;
 		color:black;
 	}
+	@media only screen and (max-width: 1200px){
+		.home-featured-product-btn{
+			max-width:50%;
+		}
+	}
 	@media only screen and (max-width: 1070px){
 		.home-youtube-main{
 			display:block;
@@ -593,6 +598,16 @@
 		}
 		.home-top-content-text{
 			margin:0 0 80px 0;padding:0 1.5%;
+		}
+	}
+	@media only screen and (max-width: 970px){
+		.home-featured-product-btn{
+			max-width:60%;
+		}
+	}
+	@media only screen and (max-width: 815px){
+		.home-featured-product-btn{
+			max-width:70%;
 		}
 	}
 	@media only screen and (max-width: 720px){
