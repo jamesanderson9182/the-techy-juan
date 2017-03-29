@@ -2,8 +2,8 @@
 include "includes/head.php";
 include "models/product.php";
 include "models/Contact.php";
-include "models/User.php";
-include "models/data-seeder/DataSeeder.php";
+//include "models/User.php";
+//include "models/data-seeder/DataSeeder.php";
 //new DataSeeder();
 ?>
 
@@ -46,16 +46,17 @@ include "models/data-seeder/DataSeeder.php";
         <div class="home-content">
             <a class="home-content-title">Looking to start a project?</a>
             <div class="home-project">
-                <div class="home-project-tile">
+                <?php include "/includes/projectsConfig.php";?>
+               <a href="<?php echo $project_link_1?>"><div class="home-project-tile">
                     <div class="home-project-tile-shadow"></div>
-                    <img src="img/yt-preview-4.png"></div>
-                <div class="home-project-tile">
+                    <img src="<?php echo $project_thumbnail_1?>"></div></a><!--
+            --><a href="<?php echo $project_link_2?>"><div class="home-project-tile">
                     <div class="home-project-tile-shadow"></div>
-                    <img src="img/yt-preview-3.png"></div>
-                <div class="home-project-tile">
+                    <img src="<?php echo $project_thumbnail_2?>"></div></a><!--
+            --><a href="<?php echo $project_link_3?>"><div class="home-project-tile">
                     <div class="home-project-tile-shadow"></div>
-                    <img src="img/yt-preview-1.png"></div>
-                <div class="home-project-tile">
+                    <img src="<?php echo $project_thumbnail_3?>"></div></a><!--
+            --><a href="<?php echo $project_link_4?>"><div class="home-project-tile">
                     <div class="home-project-tile-shadow"></div>
                     <img src="<?php echo $project_thumbnail_4?>"></div>
             </div></a>

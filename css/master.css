@@ -1,7 +1,7 @@
 /*/////////////////////////////////////////
 	Developed by Starr Development
 /////////////////////////////////////////*/
-	body{width:100%;margin:0;font-family:helvetica;}
+	body{width:100%;margin:0;font-family:helvetica;background-color: lightgrey;}
 /*/////////////////////////////////////////
 	Essentials
 /////////////////////////////////////////*/
@@ -597,36 +597,7 @@
 /*/////////////////////////////////////////
 	TERMS AND CONDITIONS
 /////////////////////////////////////////*/
-	.terms{
-		position: absolute;
-		top:0;right:0;left:0;
-		background-color:white;
-		z-index: 500;
-		text-align: left;
-		height: auto;
-		display: none;
-	}
-	.terms-title{
-		display: block;
-		font-size:25px;
-		margin:40px 0 20px 20px;
-		color:black;
-	}
-	.terms-text{
-		display: block;
-		padding:0 0 20px 0;
-	}
-	.terms-container{
-		width:90%;height:auto;
-		margin:0 auto;
-	}
-	.terms-close{
-		position: absolute;
-		right:15px;top:15px;
-		width:30px;height:30px;
-		border-radius: 50%;
-		background-color:#212121;
-	}
+	
 /*/////////////////////////////////////////
 	PRODUCTS PAGE
 /////////////////////////////////////////*/
