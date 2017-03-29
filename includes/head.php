@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/master.css?v=1.0">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script src="/js/jquery-3.2.1.min.js"></script>
     <script src="/js/func.js"></script>
     <script src="/js/main.js"></script>
