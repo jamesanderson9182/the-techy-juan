@@ -2,10 +2,10 @@
 <div class="page">
     <div class="page-inner">
         <div class="social">
-            <span><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></span>
-            <span><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span>
-            <span><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></span>
-            <span><i class="fa fa-google fa-2x" aria-hidden="true"></i></span>
+            <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a>
         </div>
     </div>
 </div>

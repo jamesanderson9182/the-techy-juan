@@ -29,7 +29,7 @@
 	}
 	.page-inner{
 		width:98%;height:auto;
-		margin:0 auto 1% auto;
+		margin:1% auto 0 auto;
 		background-color:white;
 		position:relative;
 		overflow: hidden;
@@ -238,6 +238,7 @@
 		width:100vw;height:60px;
 		background-color:#212121;
 		text-align: center;
+		margin:.7% 0 0 0;
 	}
 	.footer-title{
 		color:white;
@@ -255,8 +256,15 @@
 		margin:20px auto;
 		overflow: hidden;
 	}
-	.social span{
+	.social a{
 		margin:0 20px;
+		color:black;
+		display: inline-block;
+		text-decoration:none;
+		transition:color .5s ease-in-out;
+	}
+	.social a:hover, .social a:focus{
+		color:darkorange;
 	}
 /*/////////////////////////////////////////
 	Homepage
