@@ -12,7 +12,7 @@ mainJquery( document ).ready(function($) {
     	if($mobileNavOpen === false){
     		$(".mobile-navigation-drop").css('display', 'block');
     		$(".mobile-navigation-logo").css('background-image', 'url("img/main-logo-inverted.png")');
-    		$(".mobile-navigation-btn").css('background-image', 'url("img/navigation-btn.png")');
+    		$(".mobile-navigation-btn").addClass("open");
     		$(".mobile-navigation").css('background-color', 'white');
     		$(".filter").css('display','block');
     		$("body").css('overflow-x','hidden');
@@ -24,10 +24,9 @@ mainJquery( document ).ready(function($) {
     	else{
     		$(".mobile-navigation-drop").css('display', 'none');
     		$(".mobile-navigation-logo").css('background-image', 'url("img/main-logo.png")');
-    		$(".mobile-navigation-btn").css('background-image', 'url("img/navigation-btn-inverted.png")');
+    		$(".mobile-navigation-btn").removeClass("open");
     		$(".mobile-navigation").css('background-color', '#212121');
     		$(".mobile-navigation").css('border-bottom', 'none');
-
     		$(".filter").css('display','none');
     		$("body").css('overflow-x','hidden');
     		$("body").css('height','auto');

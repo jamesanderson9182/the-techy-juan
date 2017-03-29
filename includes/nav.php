@@ -6,7 +6,12 @@
         <a href="/">
             <div class="mobile-navigation-logo"></div>
         </a>
-        <div class="mobile-navigation-btn"></div>
+        <div class="mobile-navigation-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
         <div class="mobile-navigation-drop">
             <ul>
