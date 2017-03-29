@@ -38,36 +38,41 @@
     </div>
 
     <div class="desktop-navigation">
-        <div class="center">
-            <div class="desktop-navigation-cart">
-                <a id="desktop-navigation-cart-links" href="?popup=cart">Shopping Cart(42)</a>
-                <div class="desktop-navigation-div"></div>
-                <a id="desktop-navigation-cart-links" href="?popup=login">Login</a>
-                <div class="desktop-navigation-div"></div>
-                <a id="desktop-navigation-cart-links" href="?popup=signup">Sign-up</a>
-            </div>
-        </div>
-        <div class="desktop-navigation-container">
-            <a href="/">
-                <div class="desktop-navigation-logo"></div>
-            </a>
-            <div class="desktop-navigation-right">
-                <ul>
-                    <li class="desktop-navigation-li"><a href="/index.php">Home</a></li>
-                    <li class="desktop-navigation-div"></li>
-                    <li class="desktop-navigation-li"><a href="/product.php">Shop</a></li>
-                    <li class="desktop-navigation-div"></li>
-                    <li class="desktop-navigation-li"><a href="/forum.php">Forum</a></li>
-                    <li class="desktop-navigation-div"></li>
-                    <li class="desktop-navigation-li"><a href="/blog.php">Blog</a></li>
-                    <li class="desktop-navigation-div"></li>
-                    <li class="desktop-navigation-li"><a href="/contact.php">Contact</a></li>
-                </ul>
-                <div class="desktop-navigation-search">
-                    <a href="#" class="desktop-navigation-search-icon"><i class="fa fa-search"></i></a>
-                    <input type="search" id="search" placeholder="Search..." />
+            <div class="center">
+            <div id="desktop-navigation-top-center">
+                <div class="desktop-navigation-cart">
+                    <a id="desktop-navigation-cart-links" href="?popup=cart">Shopping Cart(42)</a>
+                    <div class="desktop-navigation-div"></div>
+                    <a id="desktop-navigation-cart-links" href="?popup=login">Login</a>
+                    <div class="desktop-navigation-div"></div>
+                    <a id="desktop-navigation-cart-links" href="?popup=signup">Sign-up</a>
                 </div>
             </div>
-        </div>
+            </div>
+                <div class="desktop-navigation-container">
+                <div id="desktop-navigation-top-center">
+                    <a href="/">
+                        <div class="desktop-navigation-logo"></div>
+                    </a>
+                    <div class="desktop-navigation-right">
+                        <ul>
+                            <li class="desktop-navigation-li"><a href="/index.php">Home</a></li>
+                            <li class="desktop-navigation-div"></li>
+                            <li class="desktop-navigation-li"><a href="/product.php">Shop</a></li>
+                            <li class="desktop-navigation-div"></li>
+                            <li class="desktop-navigation-li"><a href="/forum.php">Forum</a></li>
+                            <li class="desktop-navigation-div"></li>
+                            <li class="desktop-navigation-li"><a href="/blog.php">Blog</a></li>
+                            <li class="desktop-navigation-div"></li>
+                            <li class="desktop-navigation-li"><a href="/contact.php">Contact</a></li>
+                        </ul>
+                        <div class="desktop-navigation-search">
+                            <a href="#" class="desktop-navigation-search-icon"><i class="fa fa-search"></i></a>
+                            <input type="search" id="search" placeholder="Search..." />
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
     </div>
 </div>

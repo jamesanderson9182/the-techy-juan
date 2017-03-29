@@ -211,10 +211,15 @@
 			margin:0 auto;
 			position: relative;
 		}
+		#desktop-navigation-top-center{
+			width:98%;height:auto;
+			margin:0 auto;
+			position: relative;
+		}
 		.desktop-navigation-cart{
 			width:auto;height:30px;
 			text-align:right;
-			margin:0 1% 0 0;
+			margin:0;
 		}
 		#desktop-navigation-cart-links{
 			text-decoration: none;
@@ -266,10 +271,11 @@
 		}
 		.desktop-navigation-search{
 			height:30px;width:200px;
-			margin:15px 15px 15px 10px;
+			margin:15px 0 15px 10px;
 			overflow: hidden;
 			position: relative;
 			display: inline-block;
+			text-align: right;
 		}
 		.desktop-navigation-search-icon{
 			position: absolute;
@@ -284,7 +290,7 @@
 			color:darkorange;
 		}
 		.desktop-navigation-search input{
-			margin:0 10px 0 0;
+			margin:0;
 			height:30px;
 			border:none;
 			line-height: normal;
