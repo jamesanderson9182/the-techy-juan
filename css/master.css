@@ -346,21 +346,51 @@
 /*/////////////////////////////////////////
 	SOCIAL MEDIA
 /////////////////////////////////////////*/
-	.social{
+	#social{
 		width:100%;height:auto;
-		text-align: center;
+		text-align: right;
 		margin:20px auto;
 		overflow: hidden;
+		vertical-align: center;
 	}
-	.social a{
-		margin:0 20px;
+	.social-icon{
+		margin:0 20px 0 0;
 		color:black;
+		font-size:13px;
 		display: inline-block;
 		text-decoration:none;
-		transition:color .5s ease-in-out;
+		transition:color .2s ease-in-out;
 	}
-	.social a:hover, .social a:focus{
+	#social-left h1{
+		display:block;
+		margin: 0;
+		text-align: left;
+		font-size:25px;
+		padding:17px 30px;
+	}
+	#social-left a{
+		font-size:18px;
+		color:grey;
+	}
+	#social-left{
+		position: absolute;
+		top:0;bottom:0;left:6%;
+		margin:0;
+		text-align: left;
+	}
+	.social-icon:hover, .social-icon:focus{
 		color:darkorange;
+	}
+	@media only screen and (max-width: 960px){
+		#social{
+			text-align: center;
+		}
+		.social-icon{
+		
+		}
+		#social-left{
+			display: none;
+		}
 	}
 /*/////////////////////////////////////////
 	Homepage
@@ -495,17 +525,17 @@
 	}
 	.home-featured-product-btn{
 		max-width:40%;width:100%;
-		background-color:#212121;
-		color:white;
+		border:solid 1px #212121;
+		color:#212121;
 		display: block;
-		padding:5px;
-		font-size:15px;
-		border-radius: 5px;
+		padding:8px 10px 7px 10px;
+		font-size:14px;
 		margin:10px auto;
 		text-decoration: none;
 	}
 	.home-featured-product-btn:hover,.home-featured-product-btn:focus{
-		color:#212121;background-color:lightgrey;
+		color:white;
+		background-color:#212121;
 	}
 	.home-featured-products-anchor{
 		width:100%;height:1px;
@@ -520,6 +550,8 @@
 		margin:0 auto;
 		right:0;left:0;bottom:0;
 		background-color: white;
+		box-shadow:0 0 15px grey;
+		text-decoration: none;
 	}
 	.home-aboutme{
 		width:97%;height:auto;
