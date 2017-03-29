@@ -145,14 +145,15 @@
 		.desktop-navigation-cart{
 			width:auto;height:30px;
 			text-align:right;
-			margin:0 14px 0 0;
+			margin:0 1% 0 0;
 		}
-		.desktop-navigation-cart a{
+		#desktop-navigation-cart-links{
 			text-decoration: none;
 			color:white;
 			display:inline-block;
-			padding:5px 0;
+			padding:6px 10px;
 			font-size:15px;
+			vertical-align: top;
 		}
 		.desktop-navigation-logo{
 			width:227px;height:90px;
@@ -178,13 +179,14 @@
 		}
 		.desktop-navigation-div{
 			display: inline-block;
-			margin:5px 0;
-			height:20px;width:2px;
-			background-color: grey;
+			margin:6px 0;
+			height:17px;width:1px;
+			background-color: white;
+			vertical-align: center;
 		}
 		.desktop-navigation li a{
 			display: block;
-			padding:6px 15px;
+			padding:6px 12px;
 			text-decoration: none;
 			color:white;
 		}
@@ -202,7 +204,7 @@
 		}
 		.desktop-navigation-search-icon{
 			position: absolute;
-  			top: 7px;right:10px;
+  			top: 5px;right:10px;
   			z-index: 1;
   			color: #4f5b66;
   			transition:transform 1s ease-in-out;

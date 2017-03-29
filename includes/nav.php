@@ -35,11 +35,11 @@
     <div class="desktop-navigation">
         <div class="center">
             <div class="desktop-navigation-cart">
-                <a href="?popup=cart">Shopping Cart(0)</a>
-                <a style="color:grey;">&nbsp;|&nbsp;</a>
-                <a href="?popup=login">Login</a>
-                <a style="color:grey;">&nbsp;|&nbsp;</a>
-                <a href="?popup=signup">Sign-up</a>
+                <a id="desktop-navigation-cart-links" href="?popup=cart">Shopping Cart(42)</a>
+                <div class="desktop-navigation-div"></div>
+                <a id="desktop-navigation-cart-links" href="?popup=login">Login</a>
+                <div class="desktop-navigation-div"></div>
+                <a id="desktop-navigation-cart-links" href="?popup=signup">Sign-up</a>
             </div>
         </div>
         <div class="desktop-navigation-container">
