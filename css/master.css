@@ -13,50 +13,6 @@
 		right:0;top:0;bottom:0;left:0;
 		z-index:198;
 	}
-	.divider{
-		width:90%;height:1px;
-		background-color:grey;
-		margin:20px auto;
-		max-width:1200px;
-	}
-	.down-for-maintenance{
-		width:90%;height:auto;
-		margin:20px auto 0 auto;
-		text-align: center;
-	}
-	.down-for-maintenance a{display:block;padding:20px 0;}
-	.navigation-cutter{
-		width:90%;height:auto;
-		margin:10px auto 20px auto;
-		text-align: left;
-	}
-	.navigation-cutter a{
-		display:inline-block;
-		padding:10px 0 0 0;
-		text-decoration: none;
-		color:grey;
-	}
-	.center{
-		width:100%;max-width:1100px;
-		height:auto;
-		margin:0 auto;
-	}
-	.center-text{
-		width:100%;max-width:1200px;
-		margin:0 auto;
-		text-align: center        ;
-		height:auto;
-	}
-	.center-content{
-		width:100%;max-width:1200px;
-		margin:0 auto;
-		height:auto;
-		background-color:lightgrey;
-		position: relative;
-		overflow: hidden;
-	}
-
-
 	.page{
 		width:100%;max-width:1200px;
 		height:auto;
