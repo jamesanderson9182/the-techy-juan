@@ -43,7 +43,9 @@
             </div>
         </div>
         <div class="desktop-navigation-container">
-            <div class="desktop-navigation-logo"></div>
+            <a href="/">
+                <div class="desktop-navigation-logo"></div>
+            </a>
             <div class="desktop-navigation-right">
                 <ul>
                     <li class="desktop-navigation-li"><a href="index.php">Home</a></li>
