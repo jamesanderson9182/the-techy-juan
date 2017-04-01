@@ -365,16 +365,16 @@
 		display:block;
 		margin: 0;
 		text-align: left;
-		font-size:25px;
-		padding:17px 30px;
+		font-size:20px;
+		padding:23px 30px;
 	}
 	#social-left a{
-		font-size:18px;
+		font-size:15px;
 		color:grey;
 	}
 	#social-left{
 		position: absolute;
-		top:0;bottom:0;left:6%;
+		top:0;bottom:0;left:4%;
 		margin:0;
 		text-align: left;
 	}

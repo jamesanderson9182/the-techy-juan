@@ -23,3 +23,16 @@ Nice to have
 * Blog - Projects tab
 * Forum
 
+Min product
+===========
+* Table of products
+* Login functionality
+* Table of users
+* Payments :)
+* CRUD for products
+* Admin page
+* Shopping cart
+* Searchable products
+* Individual Product pages
+* Homepage
+*

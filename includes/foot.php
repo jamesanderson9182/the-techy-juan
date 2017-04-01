@@ -3,7 +3,7 @@
     <div class="page-inner">
         <div id="social">
             <div id="social-left">
-            <h1>"Some edgy quote said here"<a>-Mr. Edge</a></h1>
+            <h1>"Any sufficiently advanced technology is indistinguishable from magic."<a>– Arthur C. Clarke</a></h1>
             </div>
             <a class="social-icon" href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
             <a class="social-icon" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
