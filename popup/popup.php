@@ -1,23 +1,42 @@
 <head>
 	<script type="text/javascript" src="js/popup.js"></script>
 </head>
-<?php
-    if (isset($_GET['popup'])){
-        $curPopup = "popup/" . htmlspecialchars($_GET["popup"]) . ".php";
-        if(file_exists($curPopup)){
-        	?>
-        	<style type="text/css">body{overflow:hidden;height:100vh;}</style>
-        	<div id="popup-container">
-        	<div id="popup">
-        	<a href="/index.php">
-        	<i id="popup-exit" class="fa fa-times fa-2x" aria-hidden="true"></i>
-        	</a>
-        	<?php
-        	include $curPopup;
-        	?>
-      		</div>
-      		</div>
-        	<?php
-        }
-    	}
-?>
+    
+    <div id="popup-terms" class="popup-container">
+        <div class="popup">
+        <a class="popup-exit-container" href="/index.php">
+            <i class="popup-exit fa fa-times fa-2x" aria-hidden="true"></i>
+        </a>
+            	<?php
+            	include "terms.php";
+            	?>
+        </div>
+    </div>
+    <div id="popup-login" class="popup-container">
+        <div class="popup">
+        <a class="popup-exit-container" href="/index.php">
+            <i class="popup-exit fa fa-times fa-2x" aria-hidden="true"></i>
+        </a>
+                <?php
+                include "login.php";
+                ?>
+        </div>
+    </div>
+    <div id="popup-signup" class="popup-container">
+        <div class="popup">
+        <a class="popup-exit-container" href="/index.php">
+            <i class="popup-exit fa fa-times fa-2x" aria-hidden="true"></i>
+        </a>
+                <?php
+                include "signup.php";
+                ?>
+        </div>
+    </div>
+    <div id="popup-cart" class="popup-container">
+        <div class="popup">
+        <i class="popup-exit fa fa-angle-double-right fa-2x" aria-hidden="true"></i>
+                <?php
+                include "cart.php";
+                ?>
+        </div>
+    </div>

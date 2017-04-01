@@ -1,7 +1,7 @@
-<div id="popup-title-container">
-<a id="popup-title">Terms and Privacy Policy</a>
+<div class="popup-title-container">
+<a class="popup-title">Terms and Privacy Policy</a>
 </div>
-<div id="popup-content">
+<div class="popup-content">
     <a style="padding:10px;">1. Terms</a>
     <br>
     By accessing the website at http://thetechyjuan.com, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.

@@ -31,7 +31,7 @@
             <div class="mobile-navigation-drop-account">
                 <a style="color:grey" href="?popup=login">Login</a>
                 <a> or </a>
-                <a style="color:grey" href="?popup=signup">Sign-up</a>
+                <a style="color:grey" onClick="showPopup('signup');">Sign-up</a>
             </div>
         </div>
 
@@ -41,11 +41,11 @@
             <div class="center">
             <div id="desktop-navigation-top-center">
                 <div class="desktop-navigation-cart">
-                    <a id="desktop-navigation-cart-links" href="?popup=cart">Shopping Cart(42)</a>
+                    <a id="desktop-navigation-cart-links" onClick="showPopup('cart');">Shopping Cart(42)</a>
                     <div class="desktop-navigation-div"></div>
-                    <a id="desktop-navigation-cart-links" href="?popup=login">Login</a>
+                    <a id="desktop-navigation-cart-links" onClick="showPopup('login');">Login</a>
                     <div class="desktop-navigation-div"></div>
-                    <a id="desktop-navigation-cart-links" href="?popup=signup">Sign-up</a>
+                    <a id="desktop-navigation-cart-links" onClick="showPopup('signup');">Sign-up</a>
                 </div>
             </div>
             </div>

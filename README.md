@@ -35,4 +35,3 @@ Min product
 * Searchable products
 * Individual Product pages
 * Homepage
-*

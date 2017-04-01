@@ -1,6 +1,6 @@
-<div id="popup-title-container">
-<a id="popup-title">Login</a>
+<div class="popup-title-container">
+<a class="popup-title">Login</a>
 </div>
-<div id="popup-content">
+<div class="popup-content">
 	<!-- Content for the popup goes here -->
 </div>
