@@ -25,11 +25,11 @@
                 <div class="mobile-navigation-underline"></div>
                 <li><a href="/contact.php">CONTACT</a></li>
             </ul>
-            <div class="mobile-navigation-drop-cart" onClick="window.location='cart.php'">
+            <div class="mobile-navigation-drop-cart" onClick="showPopup('cart');">
                 <a href="?popup=cart">View your Shopping Cart (0)</a>
             </div>
             <div class="mobile-navigation-drop-account">
-                <a style="color:grey" href="?popup=login">Login</a>
+                <a style="color:grey" onClick="showPopup('login');">Login</a>
                 <a> or </a>
                 <a style="color:grey" onClick="showPopup('signup');">Sign-up</a>
             </div>

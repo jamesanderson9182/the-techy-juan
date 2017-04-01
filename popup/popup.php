@@ -4,19 +4,15 @@
     
     <div id="popup-terms" class="popup-container">
         <div class="popup">
-        <a class="popup-exit-container" href="/index.php">
-            <i class="popup-exit fa fa-times fa-2x" aria-hidden="true"></i>
-        </a>
-            	<?php
-            	include "terms.php";
-            	?>
+        <i class="popup-exit fa fa-angle-double-right fa-2x" aria-hidden="true"></i>
+                <?php
+                include "terms.php";
+                ?>
         </div>
     </div>
     <div id="popup-login" class="popup-container">
         <div class="popup">
-        <a class="popup-exit-container" href="/index.php">
-            <i class="popup-exit fa fa-times fa-2x" aria-hidden="true"></i>
-        </a>
+        <i class="popup-exit fa fa-angle-double-right fa-2x" aria-hidden="true"></i>
                 <?php
                 include "login.php";
                 ?>
@@ -24,9 +20,7 @@
     </div>
     <div id="popup-signup" class="popup-container">
         <div class="popup">
-        <a class="popup-exit-container" href="/index.php">
-            <i class="popup-exit fa fa-times fa-2x" aria-hidden="true"></i>
-        </a>
+        <i class="popup-exit fa fa-angle-double-right fa-2x" aria-hidden="true"></i>
                 <?php
                 include "signup.php";
                 ?>
