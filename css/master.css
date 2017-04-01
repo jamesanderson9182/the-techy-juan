@@ -862,6 +862,56 @@
 		}
 	}
 /*/////////////////////////////////////////
+	Contact Page
+/////////////////////////////////////////*/
+	#contact-container{
+		width:98%;height:500px;
+		margin:1%;
+		text-align: left;
+	}
+	#contact-form{
+		width:50%;height:500px;
+		display: inline-block;
+	}
+	#contact-form-group{
+		width:100%;height:100%;
+	}
+	.contact-form-input{
+		width:100%;height:auto;
+		text-align: right;
+	}
+	.contact-form-label{
+		text-align: left;
+	}
+	.contact-form-input input[type=text]{
+		width:100%;height:40px;
+		padding:10px;
+		line-height: normal;
+		border-radius: 0;
+	}
+	.contact-form-input textarea{
+		width:100%;height:100px;
+		padding:10px;
+		line-height: normal;
+		border-radius: 0;
+	}
+	#contact-form-group input[type=submit]{
+		padding:10px 20px 9px 20px;  
+	    border:solid 1px #212121;
+	    background:transparent;
+	    cursor:pointer;
+	    margin:1% 0;
+	    font-size:16px;
+	    border-radius: 0;
+	}
+	@media only screen and (max-width: 960px){
+		#contact-form{
+			width:98%;
+			margin:0 1%;
+		}
+	}
+
+/*/////////////////////////////////////////
 	END
 /////////////////////////////////////////*/
 

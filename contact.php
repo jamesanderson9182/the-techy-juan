@@ -63,27 +63,27 @@ if(isset($_POST["submit_contact"])){
 			<a class="page-title">Contact Us</a>
 		</div>
         <div class="page-inner">
-        	<!--Placeholder Div -->
-        	<div style="height:200px;"></div>
-        </div>
-        <div class="page-innder">
-			<div class="container">
-				<br/><br/><br/><br/><br/>
-			    <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form-horizontal>
-				    <div class="form-group form-group-lg">
-					    <label class="col-sm-2 control-label" for="contact_name">Name :</label>
-					    <div class="col-sm-10">
+			<div id="contact-container">
+			    <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id="contact-form">
+				    <div id="contact-form-group">
+					    
+					    <label class="contact-form-label" for="contact_name">Name :</label>
+					    <div class="contact-form-input">
 					    	<input type="text" class="form-control" id="contact_name" name="contact_name" placeholder="name"/>
 					    </div>
-					    <label class="col-sm-2 control-label" for="contact_mail">Email :</label>
-					    <div class="col-sm-10">
+
+					    <label class="contact-form-label" for="contact_mail">Email :</label>
+					    <div class="contact-form-input">
 					    	<input type="text" class="form-control" id="contact_mail" name="contact_mail" placeholder="eg. xyz@mail.com"/>
 					    </div>
-					    <label class="col-sm-2 control-label" for="contact_content">Content :</label>
-					    <div class="col-sm-10">
-					    	<textarea  class="form-control" id="contact_content" name="contact_content" placeholder="further Information"></textarea>
+					    
+					    <label class="contact-form-label" for="contact_content">Message :</label>
+					    <div class="contact-form-input">
+					    	<textarea  class="form-control" id="contact_content" name="contact_content" placeholder="Your Message"></textarea>
 					    </div>
-					    <input type="submit" id="submit_contact" name="submit_contact" value="Send!"/>
+					    <div class="contact-form-input">
+					    	<input type="submit" id="submit_contact" name="submit_contact" value="Submit"/>
+				    	</div>
 				    </div>
 			    </form>
 			</div>
