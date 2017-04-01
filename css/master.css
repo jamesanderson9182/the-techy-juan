@@ -68,6 +68,11 @@
 		.mobile-navigation img{
 			height:100%;margin:0 0 0 10px;
 		}
+		#mobile-navigation-btn-container{
+			position: absolute;
+			right:0;top:0;
+			height:60px;width:100px;
+		}
 		.mobile-navigation-btn{
 			width: 40px;
 			height: 30px;
@@ -152,6 +157,7 @@
 			background-position: center;
 			background-repeat: no-repeat;
 			margin:0 0 0 10px;
+			overflow: hidden;
 		}
 		.mobile-navigation-drop{
 			width:100%;height:auto;
@@ -233,6 +239,7 @@
 			padding:6px 10px;
 			font-size:15px;
 			vertical-align: top;
+			cursor: pointer;
 		}
 		.desktop-navigation-logo{
 			width:227px;height:90px;
@@ -329,6 +336,9 @@
 		display: inline-block;
 		padding:22px 0 10px 0;
 		text-decoration: none;
+	}
+	.footer-terms{
+		cursor: pointer;
 	}
 	#footer span{
 		display: block;
@@ -910,7 +920,6 @@
 			margin:0 1%;
 		}
 	}
-
 /*/////////////////////////////////////////
 	END
 /////////////////////////////////////////*/

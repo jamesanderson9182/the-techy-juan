@@ -3,14 +3,16 @@
 <div class="navigation-ghost"></div>
 <div class="navigation">
     <div class="mobile-navigation">
-        <a href="/">
+        <a class="mobile-navigation-logo-container" href="/">
             <div class="mobile-navigation-logo"></div>
         </a>
-        <div class="mobile-navigation-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div id="mobile-navigation-btn-container">
+            <div class="mobile-navigation-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
 
         <div class="mobile-navigation-drop">

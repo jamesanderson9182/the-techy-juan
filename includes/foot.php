@@ -15,7 +15,7 @@
 <div id="footer">
     <div class="center">
         <a id="footer-title">the Techy Juan&nbsp;&nbsp;|</a>
-        <a onClick="showPopup('terms');" id="footer-title">&nbsp;&nbsp;Terms and Privacy Policy</a>
+        <a onClick="showPopup('terms');" id="footer-title" class="footer-terms">&nbsp;&nbsp;Terms and Privacy Policy</a>
         <span>
             <i class="fa fa-cc-amex" aria-hidden="true"></i>
             <i class="fa fa-cc-discover" aria-hidden="true"></i>
