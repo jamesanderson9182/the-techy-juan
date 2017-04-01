@@ -3,7 +3,7 @@ include "includes/head.php";
 ?>
     <div class="page">
         <div class="page-inner" style="text-align: left;">
-			<a class="page-title">Welcome to our Blog!</a>
+			<a class="page-title">The Techy Juan Blog</a>
 		</div>
         <div class="page-inner">
         	<!--Placeholder Div -->
