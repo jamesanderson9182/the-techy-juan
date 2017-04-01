@@ -59,7 +59,9 @@ if(isset($_POST["submit_contact"])){
 	<script type="text/javascript" src="js/contact.js"></script>
 </head>
 	<div class="page">
-        <div class="page-inner"><a>Contact Page</a></div>
+        <div class="page-inner" style="text-align: left;">
+			<a class="page-title">Contact Us</a>
+		</div>
         <div class="page-inner">
         	<!--Placeholder Div -->
         	<div style="height:200px;"></div>
